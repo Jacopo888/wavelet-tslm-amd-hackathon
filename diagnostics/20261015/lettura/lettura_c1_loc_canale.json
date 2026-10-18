@@ -1,0 +1,1286 @@
+{
+ "insieme": "loc",
+ "ruolo": "PRIMARIO: scansione dei 7 canali analogici (almeno un canale «presente»)",
+ "righe": 23,
+ "M1_guasti_rilevati": {
+  "rilevati": 1,
+  "su": 4,
+  "col_centro": 0,
+  "attesi_a_caso": 2.1464588204833537,
+  "per_guasto": [
+   {
+    "guasto": "1",
+    "campioni": 8657,
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.7204669439415057,
+    "finestre": [
+     {
+      "finestra": 7,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.47111993475894565,
+      "emessi": 7
+     },
+     {
+      "finestra": 8,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.47146229470553397,
+      "emessi": 7
+     }
+    ]
+   },
+   {
+    "guasto": "2",
+    "campioni": 2360,
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.25022560390729154,
+    "finestre": [
+     {
+      "finestra": 11,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.1338829820445489,
+      "emessi": 7
+     },
+     {
+      "finestra": 12,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.13432667809412188,
+      "emessi": 7
+     }
+    ]
+   },
+   {
+    "guasto": "3",
+    "campioni": 17315,
+    "rilevato": true,
+    "rilevato_col_centro": false,
+    "p_caso": 0.9956199182612265,
+    "finestre": [
+     {
+      "finestra": 12,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.9339388810956328,
+      "emessi": 7
+     },
+     {
+      "finestra": 13,
+      "tocca": true,
+      "centro_dentro": false,
+      "p_caso": 0.9336965251055727,
+      "emessi": 7
+     }
+    ]
+   },
+   {
+    "guasto": "4",
+    "campioni": 1622,
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.18014635437332993,
+    "finestre": [
+     {
+      "finestra": 16,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.09472805499169067,
+      "emessi": 7
+     },
+     {
+      "finestra": 17,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.09435650784566753,
+      "emessi": 7
+     }
+    ]
+   }
+  ]
+ },
+ "M2_falsi_allarmi": {
+  "finestre_pulite_con_segnalazioni": 15,
+  "finestre_pulite": 15,
+  "wilson95": [
+   0.7961166964035129,
+   1.0
+  ],
+  "per_finestra": [
+   {
+    "finestra": 0,
+    "emessi": 7
+   },
+   {
+    "finestra": 1,
+    "emessi": 7
+   },
+   {
+    "finestra": 2,
+    "emessi": 7
+   },
+   {
+    "finestra": 3,
+    "emessi": 7
+   },
+   {
+    "finestra": 4,
+    "emessi": 7
+   },
+   {
+    "finestra": 5,
+    "emessi": 7
+   },
+   {
+    "finestra": 6,
+    "emessi": 7
+   },
+   {
+    "finestra": 10,
+    "emessi": 7
+   },
+   {
+    "finestra": 14,
+    "emessi": 7
+   },
+   {
+    "finestra": 15,
+    "emessi": 7
+   },
+   {
+    "finestra": 18,
+    "emessi": 7
+   },
+   {
+    "finestra": 19,
+    "emessi": 7
+   },
+   {
+    "finestra": 20,
+    "emessi": 7
+   },
+   {
+    "finestra": 21,
+    "emessi": 6
+   },
+   {
+    "finestra": 22,
+    "emessi": 6
+   }
+  ]
+ },
+ "M3_precisione": {
+  "emessi_che_toccano_una_zona_sospetta": 18,
+  "emessi": 159
+ },
+ "M4_iou": [
+  {
+   "finestra": 7,
+   "iou": 0.0
+  },
+  {
+   "finestra": 8,
+   "iou": 0.0
+  },
+  {
+   "finestra": 11,
+   "iou": 0.0
+  },
+  {
+   "finestra": 12,
+   "iou": 0.0
+  },
+  {
+   "finestra": 13,
+   "iou": 0.003747795414462081
+  },
+  {
+   "finestra": 16,
+   "iou": 0.0
+  },
+  {
+   "finestra": 17,
+   "iou": 0.0
+  }
+ ],
+ "formato": {
+  "valide": 23,
+  "liste_vuote": 0,
+  "intervalli_emessi": 159,
+  "canali_citati": {
+   "DV_pressure": 23,
+   "H1": 23,
+   "Motor_current": 21,
+   "Oil_temperature": 23,
+   "Reservoirs": 23,
+   "TP2": 23,
+   "TP3": 23
+  }
+ },
+ "regola": "A: M1 >= 3 e M2 <= meta' delle pulite; B: M2 > meta'; C: M1 <= 1 e M2 <= meta'; D: altrimenti. M1-caso: per guasto 1 - prod_finestre(1 - min(1, sum_intervalli (l_i + l_g - 1)/(L - l_i + 1)))",
+ "esito_regola": "B",
+ "frase": "segnala quasi ovunque: le rilevazioni non si leggono come prova",
+ "per_finestra": [
+  {
+   "finestra": 0,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 2167,
+     "end": 2327
+    },
+    {
+     "channel": "TP3",
+     "start": 121119,
+     "end": 121227
+    },
+    {
+     "channel": "H1",
+     "start": 6058,
+     "end": 6227
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 114162,
+     "end": 114327
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 121119,
+     "end": 121227
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 7063,
+     "end": 7201
+    },
+    {
+     "channel": "Motor_current",
+     "start": 10719,
+     "end": 10876
+    }
+   ]
+  },
+  {
+   "finestra": 1,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 7735,
+     "end": 7896
+    },
+    {
+     "channel": "TP3",
+     "start": 765,
+     "end": 872
+    },
+    {
+     "channel": "H1",
+     "start": 9815,
+     "end": 9984
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 215,
+     "end": 377
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 765,
+     "end": 872
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 110227,
+     "end": 110368
+    },
+    {
+     "channel": "Motor_current",
+     "start": 9420,
+     "end": 9580
+    }
+   ]
+  },
+  {
+   "finestra": 2,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 6127,
+     "end": 6287
+    },
+    {
+     "channel": "TP3",
+     "start": 98530,
+     "end": 98684
+    },
+    {
+     "channel": "H1",
+     "start": 130549,
+     "end": 130720
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 128733,
+     "end": 128905
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 98530,
+     "end": 98684
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 98530,
+     "end": 98684
+    },
+    {
+     "channel": "Motor_current",
+     "start": 2418,
+     "end": 2577
+    }
+   ]
+  },
+  {
+   "finestra": 3,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 5135,
+     "end": 5298
+    },
+    {
+     "channel": "TP3",
+     "start": 103020,
+     "end": 103174
+    },
+    {
+     "channel": "H1",
+     "start": 125264,
+     "end": 125432
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 128324,
+     "end": 128494
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 103020,
+     "end": 103174
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 125225,
+     "end": 125366
+    },
+    {
+     "channel": "Motor_current",
+     "start": 25885,
+     "end": 26052
+    }
+   ]
+  },
+  {
+   "finestra": 4,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 125431,
+     "end": 125592
+    },
+    {
+     "channel": "TP3",
+     "start": 37483,
+     "end": 37638
+    },
+    {
+     "channel": "H1",
+     "start": 1358,
+     "end": 1526
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 5679,
+     "end": 5847
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 37483,
+     "end": 37638
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 479,
+     "end": 614
+    },
+    {
+     "channel": "Motor_current",
+     "start": 12014,
+     "end": 12172
+    }
+   ]
+  },
+  {
+   "finestra": 5,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 583,
+     "end": 744
+    },
+    {
+     "channel": "TP3",
+     "start": 95389,
+     "end": 95541
+    },
+    {
+     "channel": "H1",
+     "start": 129081,
+     "end": 129248
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 2771,
+     "end": 2940
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 95389,
+     "end": 95541
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 102924,
+     "end": 103059
+    },
+    {
+     "channel": "Motor_current",
+     "start": 129256,
+     "end": 129414
+    }
+   ]
+  },
+  {
+   "finestra": 6,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 527,
+     "end": 688
+    },
+    {
+     "channel": "TP3",
+     "start": 29853,
+     "end": 30005
+    },
+    {
+     "channel": "H1",
+     "start": 11858,
+     "end": 12026
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 8274,
+     "end": 8444
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 29853,
+     "end": 30005
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 29852,
+     "end": 29999
+    },
+    {
+     "channel": "Motor_current",
+     "start": 4591,
+     "end": 4749
+    }
+   ]
+  },
+  {
+   "finestra": 7,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "1"
+   ],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 3377,
+     "end": 3549
+    },
+    {
+     "channel": "TP3",
+     "start": 113187,
+     "end": 113336
+    },
+    {
+     "channel": "H1",
+     "start": 3601,
+     "end": 3765
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 10840,
+     "end": 11007
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 113187,
+     "end": 113336
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 2429,
+     "end": 2554
+    },
+    {
+     "channel": "Motor_current",
+     "start": 3682,
+     "end": 3842
+    }
+   ]
+  },
+  {
+   "finestra": 8,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "1"
+   ],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 6363,
+     "end": 6537
+    },
+    {
+     "channel": "TP3",
+     "start": 119665,
+     "end": 119821
+    },
+    {
+     "channel": "H1",
+     "start": 220,
+     "end": 388
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 7152,
+     "end": 7321
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 119665,
+     "end": 119821
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 100687,
+     "end": 100833
+    },
+    {
+     "channel": "Motor_current",
+     "start": 9779,
+     "end": 9938
+    }
+   ]
+  },
+  {
+   "finestra": 9,
+   "valida": true,
+   "pulita": false,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 3788,
+     "end": 3958
+    },
+    {
+     "channel": "TP3",
+     "start": 35145,
+     "end": 35294
+    },
+    {
+     "channel": "H1",
+     "start": 4235,
+     "end": 4401
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 126657,
+     "end": 126826
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 54130,
+     "end": 54286
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 35143,
+     "end": 35300
+    },
+    {
+     "channel": "Motor_current",
+     "start": 120402,
+     "end": 120562
+    }
+   ]
+  },
+  {
+   "finestra": 10,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 1567,
+     "end": 1728
+    },
+    {
+     "channel": "TP3",
+     "start": 127567,
+     "end": 127710
+    },
+    {
+     "channel": "H1",
+     "start": 2401,
+     "end": 2567
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 128589,
+     "end": 128761
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 127567,
+     "end": 127710
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 127563,
+     "end": 127704
+    },
+    {
+     "channel": "Motor_current",
+     "start": 73854,
+     "end": 74013
+    }
+   ]
+  },
+  {
+   "finestra": 11,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "2"
+   ],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 3712,
+     "end": 3871
+    },
+    {
+     "channel": "TP3",
+     "start": 38619,
+     "end": 38772
+    },
+    {
+     "channel": "H1",
+     "start": 122352,
+     "end": 122517
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 0,
+     "end": 130
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 38619,
+     "end": 38772
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 62038,
+     "end": 62164
+    },
+    {
+     "channel": "Motor_current",
+     "start": 122490,
+     "end": 122620
+    }
+   ]
+  },
+  {
+   "finestra": 12,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "2",
+    "3"
+   ],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 3602,
+     "end": 3764
+    },
+    {
+     "channel": "TP3",
+     "start": 122092,
+     "end": 122251
+    },
+    {
+     "channel": "H1",
+     "start": 122173,
+     "end": 122333
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 8188,
+     "end": 8355
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 122092,
+     "end": 122251
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 10243,
+     "end": 10384
+    },
+    {
+     "channel": "Motor_current",
+     "start": 77135,
+     "end": 77260
+    }
+   ]
+  },
+  {
+   "finestra": 13,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "3"
+   ],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 127186,
+     "end": 127348
+    },
+    {
+     "channel": "TP3",
+     "start": 130215,
+     "end": 130363
+    },
+    {
+     "channel": "H1",
+     "start": 1699,
+     "end": 1860
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 21055,
+     "end": 21227
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 130215,
+     "end": 130363
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 56089,
+     "end": 56225
+    },
+    {
+     "channel": "Motor_current",
+     "start": 11602,
+     "end": 11720
+    }
+   ]
+  },
+  {
+   "finestra": 14,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 2085,
+     "end": 2257
+    },
+    {
+     "channel": "TP3",
+     "start": 2064,
+     "end": 2206
+    },
+    {
+     "channel": "H1",
+     "start": 6596,
+     "end": 6757
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 16767,
+     "end": 16931
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 2064,
+     "end": 2206
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 2067,
+     "end": 2209
+    },
+    {
+     "channel": "Motor_current",
+     "start": 125186,
+     "end": 125300
+    }
+   ]
+  },
+  {
+   "finestra": 15,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 4562,
+     "end": 4735
+    },
+    {
+     "channel": "TP3",
+     "start": 30970,
+     "end": 31113
+    },
+    {
+     "channel": "H1",
+     "start": 1360,
+     "end": 1524
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 6806,
+     "end": 6963
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 30970,
+     "end": 31113
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 72535,
+     "end": 72688
+    },
+    {
+     "channel": "Motor_current",
+     "start": 60930,
+     "end": 61032
+    }
+   ]
+  },
+  {
+   "finestra": 16,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "4"
+   ],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 4210,
+     "end": 4372
+    },
+    {
+     "channel": "TP3",
+     "start": 100592,
+     "end": 100732
+    },
+    {
+     "channel": "H1",
+     "start": 124398,
+     "end": 124566
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 5462,
+     "end": 5632
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 100592,
+     "end": 100732
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 7009,
+     "end": 7160
+    },
+    {
+     "channel": "Motor_current",
+     "start": 116358,
+     "end": 116482
+    }
+   ]
+  },
+  {
+   "finestra": 17,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "4"
+   ],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 6225,
+     "end": 6389
+    },
+    {
+     "channel": "TP3",
+     "start": 69237,
+     "end": 69384
+    },
+    {
+     "channel": "H1",
+     "start": 0,
+     "end": 121
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 125363,
+     "end": 125531
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 69237,
+     "end": 69384
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 22383,
+     "end": 22524
+    },
+    {
+     "channel": "Motor_current",
+     "start": 50825,
+     "end": 50944
+    }
+   ]
+  },
+  {
+   "finestra": 18,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 129074,
+     "end": 129237
+    },
+    {
+     "channel": "TP3",
+     "start": 3701,
+     "end": 3848
+    },
+    {
+     "channel": "H1",
+     "start": 129339,
+     "end": 129506
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 126901,
+     "end": 127069
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 3701,
+     "end": 3848
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 109720,
+     "end": 109854
+    },
+    {
+     "channel": "Motor_current",
+     "start": 7954,
+     "end": 8127
+    }
+   ]
+  },
+  {
+   "finestra": 19,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 2321,
+     "end": 2484
+    },
+    {
+     "channel": "TP3",
+     "start": 66879,
+     "end": 67033
+    },
+    {
+     "channel": "H1",
+     "start": 381,
+     "end": 548
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 71,
+     "end": 239
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 66879,
+     "end": 67033
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 14391,
+     "end": 14539
+    },
+    {
+     "channel": "Motor_current",
+     "start": 15596,
+     "end": 15757
+    }
+   ]
+  },
+  {
+   "finestra": 20,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 127105,
+     "end": 127268
+    },
+    {
+     "channel": "TP3",
+     "start": 1343,
+     "end": 1497
+    },
+    {
+     "channel": "H1",
+     "start": 173,
+     "end": 342
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 129496,
+     "end": 129666
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 1343,
+     "end": 1497
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 1349,
+     "end": 1494
+    },
+    {
+     "channel": "Motor_current",
+     "start": 9295,
+     "end": 9466
+    }
+   ]
+  },
+  {
+   "finestra": 21,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 607,
+     "end": 769
+    },
+    {
+     "channel": "TP3",
+     "start": 28287,
+     "end": 28424
+    },
+    {
+     "channel": "H1",
+     "start": 123079,
+     "end": 123249
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 6543,
+     "end": 6711
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 28286,
+     "end": 28424
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 21408,
+     "end": 21566
+    }
+   ]
+  },
+  {
+   "finestra": 22,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "TP2",
+     "start": 6449,
+     "end": 6612
+    },
+    {
+     "channel": "TP3",
+     "start": 11796,
+     "end": 11934
+    },
+    {
+     "channel": "H1",
+     "start": 98,
+     "end": 266
+    },
+    {
+     "channel": "DV_pressure",
+     "start": 6236,
+     "end": 6406
+    },
+    {
+     "channel": "Reservoirs",
+     "start": 11796,
+     "end": 11934
+    },
+    {
+     "channel": "Oil_temperature",
+     "start": 18654,
+     "end": 18814
+    }
+   ]
+  }
+ ],
+ "risposte_a_un_canale": {
+  "righe": 161,
+  "valide": 161,
+  "assente": 2,
+  "presente": 159
+ },
+ "per_canale": {
+  "TP2": {
+   "M1": 0,
+   "M1_caso": 0.44470775472402635,
+   "M2": 15,
+   "assente": 0,
+   "presente": 23,
+   "non_valide": 0
+  },
+  "TP3": {
+   "M1": 0,
+   "M1_caso": 0.44390189385226475,
+   "M2": 15,
+   "assente": 0,
+   "presente": 23,
+   "non_valide": 0
+  },
+  "H1": {
+   "M1": 0,
+   "M1_caso": 0.44432686127453824,
+   "M2": 15,
+   "assente": 0,
+   "presente": 23,
+   "non_valide": 0
+  },
+  "DV_pressure": {
+   "M1": 0,
+   "M1_caso": 0.44465271115249005,
+   "M2": 15,
+   "assente": 0,
+   "presente": 23,
+   "non_valide": 0
+  },
+  "Reservoirs": {
+   "M1": 0,
+   "M1_caso": 0.44390189385226475,
+   "M2": 15,
+   "assente": 0,
+   "presente": 23,
+   "non_valide": 0
+  },
+  "Oil_temperature": {
+   "M1": 1,
+   "M1_caso": 0.44311295571812903,
+   "M2": 15,
+   "assente": 0,
+   "presente": 23,
+   "non_valide": 0
+  },
+  "Motor_current": {
+   "M1": 0,
+   "M1_caso": 0.44275707858958324,
+   "M2": 13,
+   "assente": 2,
+   "presente": 21,
+   "non_valide": 0
+  }
+ }
+}

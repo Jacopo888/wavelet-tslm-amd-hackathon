@@ -1,0 +1,1 @@
+The model, Wavelet-TSLM, feeds a Haar-wavelet encoder into a Qwen 3.5 four-billion-parameter backbone, fine-tuned with LoRA, with a head that outputs where the anomaly starts and ends. It was trained only on synthetic anomalies from the AnomalyXL benchmark, and it runs under ROCm on an MI300X.

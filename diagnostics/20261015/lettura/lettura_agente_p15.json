@@ -1,0 +1,535 @@
+{
+ "insieme": "p15",
+ "ruolo": "PRIMARIO",
+ "righe": 23,
+ "M1_guasti_rilevati": {
+  "rilevati": 2,
+  "su": 4,
+  "col_centro": 0,
+  "attesi_a_caso": 2.3312876633484896,
+  "per_guasto": [
+   {
+    "guasto": "1",
+    "campioni": 8657,
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.19848464634732177,
+    "finestre": [
+     {
+      "finestra": 7,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.19848464634732174,
+      "emessi": 3
+     },
+     {
+      "finestra": 8,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0,
+      "emessi": 0
+     }
+    ]
+   },
+   {
+    "guasto": "2",
+    "campioni": 2360,
+    "rilevato": true,
+    "rilevato_col_centro": false,
+    "p_caso": 1.0,
+    "finestre": [
+     {
+      "finestra": 11,
+      "tocca": true,
+      "centro_dentro": false,
+      "p_caso": 1.0,
+      "emessi": 1
+     },
+     {
+      "finestra": 12,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.018634868044369462,
+      "emessi": 1
+     }
+    ]
+   },
+   {
+    "guasto": "3",
+    "campioni": 17315,
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.13280301700116803,
+    "finestre": [
+     {
+      "finestra": 12,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.132803017001168,
+      "emessi": 1
+     },
+     {
+      "finestra": 13,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0,
+      "emessi": 0
+     }
+    ]
+   },
+   {
+    "guasto": "4",
+    "campioni": 1622,
+    "rilevato": true,
+    "rilevato_col_centro": false,
+    "p_caso": 1.0,
+    "finestre": [
+     {
+      "finestra": 16,
+      "tocca": true,
+      "centro_dentro": false,
+      "p_caso": 1.0,
+      "emessi": 1
+     },
+     {
+      "finestra": 17,
+      "tocca": true,
+      "centro_dentro": false,
+      "p_caso": 1.0,
+      "emessi": 1
+     }
+    ]
+   }
+  ]
+ },
+ "M2_falsi_allarmi": {
+  "finestre_pulite_con_segnalazioni": 12,
+  "finestre_pulite": 15,
+  "wilson95": [
+   0.5481455107594471,
+   0.9295245070826608
+  ],
+  "per_finestra": [
+   {
+    "finestra": 0,
+    "emessi": 1
+   },
+   {
+    "finestra": 1,
+    "emessi": 1
+   },
+   {
+    "finestra": 2,
+    "emessi": 1
+   },
+   {
+    "finestra": 3,
+    "emessi": 4
+   },
+   {
+    "finestra": 4,
+    "emessi": 1
+   },
+   {
+    "finestra": 5,
+    "emessi": 1
+   },
+   {
+    "finestra": 6,
+    "emessi": 1
+   },
+   {
+    "finestra": 10,
+    "emessi": 1
+   },
+   {
+    "finestra": 14,
+    "emessi": 1
+   },
+   {
+    "finestra": 15,
+    "emessi": 1
+   },
+   {
+    "finestra": 18,
+    "emessi": 0
+   },
+   {
+    "finestra": 19,
+    "emessi": 1
+   },
+   {
+    "finestra": 20,
+    "emessi": 0
+   },
+   {
+    "finestra": 21,
+    "emessi": 1
+   },
+   {
+    "finestra": 22,
+    "emessi": 0
+   }
+  ]
+ },
+ "M3_precisione": {
+  "emessi_che_toccano_una_zona_sospetta": 4,
+  "emessi": 23
+ },
+ "M4_iou": [
+  {
+   "finestra": 7,
+   "iou": 0.0
+  },
+  {
+   "finestra": 8,
+   "iou": 0.0
+  },
+  {
+   "finestra": 11,
+   "iou": 0.01800537109375
+  },
+  {
+   "finestra": 12,
+   "iou": 0.0
+  },
+  {
+   "finestra": 13,
+   "iou": 0.0
+  },
+  {
+   "finestra": 16,
+   "iou": 0.0123748779296875
+  },
+  {
+   "finestra": 17,
+   "iou": 0.012459575514091919
+  }
+ ],
+ "formato": {
+  "valide": 20,
+  "liste_vuote": 2,
+  "intervalli_emessi": 23,
+  "canali_citati": {
+   "ch_00": 2,
+   "ch_01": 3,
+   "ch_03": 4,
+   "ch_04": 2,
+   "ch_05": 12
+  }
+ },
+ "regola": "A: M1 >= 3 e M2 <= meta' delle pulite; B: M2 > meta'; C: M1 <= 1 e M2 <= meta'; D: altrimenti. M1-caso: per guasto 1 - prod_finestre(1 - min(1, sum_intervalli (l_i + l_g - 1)/(L - l_i + 1)))",
+ "esito_regola": "B",
+ "frase": "segnala quasi ovunque: le rilevazioni non si leggono come prova",
+ "per_finestra": [
+  {
+   "finestra": 0,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_05",
+     "start": 0,
+     "end": 131072
+    }
+   ]
+  },
+  {
+   "finestra": 1,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 0,
+     "end": 8
+    }
+   ]
+  },
+  {
+   "finestra": 2,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 98605,
+     "end": 98642
+    }
+   ]
+  },
+  {
+   "finestra": 3,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_01",
+     "start": 66087,
+     "end": 66150
+    },
+    {
+     "channel": "ch_03",
+     "start": 17895,
+     "end": 48288
+    },
+    {
+     "channel": "ch_04",
+     "start": 66087,
+     "end": 66150
+    },
+    {
+     "channel": "ch_05",
+     "start": 115337,
+     "end": 125468
+    }
+   ]
+  },
+  {
+   "finestra": 4,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_01",
+     "start": 37863,
+     "end": 37864
+    }
+   ]
+  },
+  {
+   "finestra": 5,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_05",
+     "start": 0,
+     "end": 131072
+    }
+   ]
+  },
+  {
+   "finestra": 6,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_05",
+     "start": 0,
+     "end": 131072
+    }
+   ]
+  },
+  {
+   "finestra": 7,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "1"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_01",
+     "start": 21759,
+     "end": 21770
+    },
+    {
+     "channel": "ch_03",
+     "start": 22520,
+     "end": 22543
+    },
+    {
+     "channel": "ch_04",
+     "start": 21759,
+     "end": 21770
+    }
+   ]
+  },
+  {
+   "finestra": 8,
+   "valida": false,
+   "pulita": false,
+   "guasti": [
+    "1"
+   ],
+   "emessi": []
+  },
+  {
+   "finestra": 9,
+   "valida": true,
+   "pulita": false,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_05",
+     "start": 0,
+     "end": 131072
+    }
+   ]
+  },
+  {
+   "finestra": 10,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_05",
+     "start": 104183,
+     "end": 104229
+    }
+   ]
+  },
+  {
+   "finestra": 11,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "2"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_05",
+     "start": 0,
+     "end": 131072
+    }
+   ]
+  },
+  {
+   "finestra": 12,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "2",
+    "3"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_05",
+     "start": 13772,
+     "end": 13854
+    }
+   ]
+  },
+  {
+   "finestra": 13,
+   "valida": false,
+   "pulita": false,
+   "guasti": [
+    "3"
+   ],
+   "emessi": []
+  },
+  {
+   "finestra": 14,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_05",
+     "start": 0,
+     "end": 131072
+    }
+   ]
+  },
+  {
+   "finestra": 15,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_05",
+     "start": 0,
+     "end": 131072
+    }
+   ]
+  },
+  {
+   "finestra": 16,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "4"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_05",
+     "start": 0,
+     "end": 131072
+    }
+   ]
+  },
+  {
+   "finestra": 17,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "4"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_03",
+     "start": 750,
+     "end": 130931
+    }
+   ]
+  },
+  {
+   "finestra": 18,
+   "valida": false,
+   "pulita": true,
+   "guasti": [],
+   "emessi": []
+  },
+  {
+   "finestra": 19,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_05",
+     "start": 0,
+     "end": 131072
+    }
+   ]
+  },
+  {
+   "finestra": 20,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": []
+  },
+  {
+   "finestra": 21,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_03",
+     "start": 2099,
+     "end": 130939
+    }
+   ]
+  },
+  {
+   "finestra": 22,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": []
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+Language models can't read a hundred thousand numbers. The usual workaround is an agent that plots, zooms and calls tools, turn after turn. On MetroPT-3 we measured about seven turns and five minutes per window. Our model reads the whole window at once: one call.

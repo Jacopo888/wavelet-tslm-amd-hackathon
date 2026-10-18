@@ -1,0 +1,522 @@
+{
+ "natura": "HAI 21.03 nelle righe di AnomalyXL; risposte cieche; gold in GOLD_HAI.json",
+ "csv_sha256": {
+  "test1": "532de41bed372206941609d05b763958f59abecfd63c8c123649f823452e445e",
+  "test2": "c5572e0ed19906107ceb56c4b4f40e165153fc7ba87b3506230d53d2478c29bb",
+  "test3": "bff835894baff0c73871bc01ece4f5cf759d455a049e808b012128767420caaf",
+  "test4": "51380fd28fd985b94a10cae3d8b80926becb3af9f233f2d3a38ab8be9482a482",
+  "test5": "f0d59308b167ed95d0e81fb3e27c906682c9b21d3dba0ab4c4d696565df35179",
+  "train1": "fdd0162315b32817ba665e2cc8990eb09c47c4edc29683a86b11dc9df062b3a9",
+  "train2": "c330af06a24f5fe3df864dddc0e9cbbbfd27db2e005bd32dc8ab3eb2ab356337",
+  "train3": "de09120c617bad5f4f3cab86705137fe7ced4b1123fb67ffdf67fd645f3d1b8f"
+ },
+ "L": 32768,
+ "passo_test": 16384,
+ "passo_training": 65536,
+ "canali": [
+  "P1_LCV01D",
+  "P1_FCV03D",
+  "P1_B2016",
+  "P1_B4022",
+  "P2_VT01",
+  "P2_VYT02",
+  "P2_VXT02",
+  "P2_SIT02",
+  "P3_LIT01",
+  "P3_LCP01D",
+  "P3_LCV01D",
+  "P3_FIT01",
+  "P4_ST_GOV",
+  "P4_ST_PO",
+  "P4_LD",
+  "P4_ST_LD"
+ ],
+ "statistiche_canali": {
+  "P1_B2004": {
+   "piatti": 0.9985883392266376,
+   "distinti": 0.0011458633338089369,
+   "mad_nulla_finestre": 16
+  },
+  "P1_B2016": {
+   "piatti": 0.012593380221721816,
+   "distinti": 0.17756803767586282,
+   "mad_nulla_finestre": 0
+  },
+  "P1_B3004": {
+   "piatti": 0.9984801877964203,
+   "distinti": 0.0014631831808599664,
+   "mad_nulla_finestre": 16
+  },
+  "P1_B3005": {
+   "piatti": 0.9984801877964203,
+   "distinti": 0.0014698840377451656,
+   "mad_nulla_finestre": 16
+  },
+  "P1_B4002": {
+   "piatti": 0.9990402983613351,
+   "distinti": 0.0008471802068628264,
+   "mad_nulla_finestre": 27
+  },
+  "P1_B4005": {
+   "piatti": 0.536287650928167,
+   "distinti": 0.4064929964190361,
+   "mad_nulla_finestre": 12
+  },
+  "P1_B400B": {
+   "piatti": 0.03852809318782602,
+   "distinti": 0.0456201729061102,
+   "mad_nulla_finestre": 0
+  },
+  "P1_B4022": {
+   "piatti": 0.012593380221721816,
+   "distinti": 0.15175759787269616,
+   "mad_nulla_finestre": 0
+  },
+  "P1_FCV01D": {
+   "piatti": 0.5390586044139445,
+   "distinti": 0.40717418878121014,
+   "mad_nulla_finestre": 15
+  },
+  "P1_FCV01Z": {
+   "piatti": 0.5240984155246255,
+   "distinti": 0.14148024283210803,
+   "mad_nulla_finestre": 2
+  },
+  "P1_FCV02D": {
+   "piatti": 0.949947518095442,
+   "distinti": 0.02078886678549677,
+   "mad_nulla_finestre": 36
+  },
+  "P1_FCV02Z": {
+   "piatti": 0.7136013515513469,
+   "distinti": 0.034705109021779194,
+   "mad_nulla_finestre": 2
+  },
+  "P1_FCV03D": {
+   "piatti": 0.0017497762973048663,
+   "distinti": 0.8405905886840005,
+   "mad_nulla_finestre": 0
+  },
+  "P1_FCV03Z": {
+   "piatti": 0.7917151450709132,
+   "distinti": 0.010518067210265896,
+   "mad_nulla_finestre": 0
+  },
+  "P1_FT01": {
+   "piatti": 0.03822868449154028,
+   "distinti": 0.01262990479914858,
+   "mad_nulla_finestre": 0
+  },
+  "P1_FT01Z": {
+   "piatti": 0.03839603459935018,
+   "distinti": 0.01248356103402797,
+   "mad_nulla_finestre": 0
+  },
+  "P1_FT02": {
+   "piatti": 0.038128502114075855,
+   "distinti": 0.046165370946173456,
+   "mad_nulla_finestre": 0
+  },
+  "P1_FT02Z": {
+   "piatti": 0.03837440431330672,
+   "distinti": 0.04528799436433559,
+   "mad_nulla_finestre": 0
+  },
+  "P1_FT03": {
+   "piatti": 0.14069134947939316,
+   "distinti": 0.00746731273775052,
+   "mad_nulla_finestre": 0
+  },
+  "P1_FT03Z": {
+   "piatti": 0.1409133445203655,
+   "distinti": 0.006673574833228335,
+   "mad_nulla_finestre": 0
+  },
+  "P1_LCV01D": {
+   "piatti": 0.0013479083513395977,
+   "distinti": 0.7923120315392383,
+   "mad_nulla_finestre": 0
+  },
+  "P1_LCV01Z": {
+   "piatti": 0.7902477009282808,
+   "distinti": 0.008633950779098308,
+   "mad_nulla_finestre": 0
+  },
+  "P1_LIT01": {
+   "piatti": 0.18091571246746918,
+   "distinti": 0.013907417251287107,
+   "mad_nulla_finestre": 0
+  },
+  "P1_PCV01D": {
+   "piatti": 0.08102363621046496,
+   "distinti": 0.9037484262000411,
+   "mad_nulla_finestre": 0
+  },
+  "P1_PCV01Z": {
+   "piatti": 0.5264458707783943,
+   "distinti": 0.12298441736150671,
+   "mad_nulla_finestre": 0
+  },
+  "P1_PCV02D": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P1_PCV02Z": {
+   "piatti": 0.8621684020227732,
+   "distinti": 0.00015030345484637648,
+   "mad_nulla_finestre": 30
+  },
+  "P1_PIT01": {
+   "piatti": 0.3021830650798385,
+   "distinti": 0.007714268680926597,
+   "mad_nulla_finestre": 0
+  },
+  "P1_PIT02": {
+   "piatti": 0.20237067935036282,
+   "distinti": 0.014554293918052524,
+   "mad_nulla_finestre": 0
+  },
+  "P1_PP01AD": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P1_PP01AR": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P1_PP01BD": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P1_PP01BR": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P1_PP02D": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P1_PP02R": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P1_STSP": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P1_TIT01": {
+   "piatti": 0.4313283955564562,
+   "distinti": 0.0026003678885182656,
+   "mad_nulla_finestre": 0
+  },
+  "P1_TIT02": {
+   "piatti": 0.4322744359618305,
+   "distinti": 0.004547670496609874,
+   "mad_nulla_finestre": 0
+  },
+  "P2_24Vdc": {
+   "piatti": 0.03924758480779783,
+   "distinti": 0.0014159586510594693,
+   "mad_nulla_finestre": 0
+  },
+  "P2_ASD": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_AutoGO": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_CO_rpm": {
+   "piatti": 0.06651882176416613,
+   "distinti": 0.0010633262133756477,
+   "mad_nulla_finestre": 0
+  },
+  "P2_Emerg": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_HILout": {
+   "piatti": 0.024483206928977524,
+   "distinti": 0.02628559433761131,
+   "mad_nulla_finestre": 0
+  },
+  "P2_MSD": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_ManualGO": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_OnOff": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_RTR": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_SIT01": {
+   "piatti": 0.1657938656508781,
+   "distinti": 0.0003496782712444746,
+   "mad_nulla_finestre": 0
+  },
+  "P2_SIT02": {
+   "piatti": 0.017026450424522825,
+   "distinti": 0.09226514440649015,
+   "mad_nulla_finestre": 0
+  },
+  "P2_TripEx": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_VT01": {
+   "piatti": 0.01690577619712249,
+   "distinti": 0.10194773336603968,
+   "mad_nulla_finestre": 0
+  },
+  "P2_VTR01": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_VTR02": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_VTR03": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_VTR04": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P2_VXT02": {
+   "piatti": 0.01700709701069447,
+   "distinti": 0.07919282987809177,
+   "mad_nulla_finestre": 0
+  },
+  "P2_VXT03": {
+   "piatti": 0.017118663749234403,
+   "distinti": 0.0666609196241997,
+   "mad_nulla_finestre": 0
+  },
+  "P2_VYT02": {
+   "piatti": 0.017005958574586918,
+   "distinti": 0.0798673091597704,
+   "mad_nulla_finestre": 0
+  },
+  "P2_VYT03": {
+   "piatti": 0.01707426474103994,
+   "distinti": 0.06754356196513989,
+   "mad_nulla_finestre": 0
+  },
+  "P3_FIT01": {
+   "piatti": 0.35120298543484846,
+   "distinti": 0.02241800706808868,
+   "mad_nulla_finestre": 0
+  },
+  "P3_LCP01D": {
+   "piatti": 0.2747422011434452,
+   "distinti": 0.0075869074536853735,
+   "mad_nulla_finestre": 0
+  },
+  "P3_LCV01D": {
+   "piatti": 0.2834808367050016,
+   "distinti": 0.005120946223490175,
+   "mad_nulla_finestre": 0
+  },
+  "P3_LH": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P3_LIT01": {
+   "piatti": 0.06756276767478979,
+   "distinti": 0.04620430903121972,
+   "mad_nulla_finestre": 0
+  },
+  "P3_LL": {
+   "piatti": 1.0,
+   "distinti": 4.094924173414785e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P3_PIT01": {
+   "piatti": 0.5238866664086211,
+   "distinti": 0.01575851960438217,
+   "mad_nulla_finestre": 0
+  },
+  "P4_HT_FD": {
+   "piatti": 0.5333983000872042,
+   "distinti": 0.002686816313529926,
+   "mad_nulla_finestre": 0
+  },
+  "P4_HT_LD": {
+   "piatti": 0.3653810687182803,
+   "distinti": 0.03560929347255636,
+   "mad_nulla_finestre": 0
+  },
+  "P4_HT_PO": {
+   "piatti": 0.2801930332263962,
+   "distinti": 0.015032301143770082,
+   "mad_nulla_finestre": 0
+  },
+  "P4_HT_PS": {
+   "piatti": 0.9999829234583868,
+   "distinti": 8.18984834682957e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P4_LD": {
+   "piatti": 0.006885261578464432,
+   "distinti": 0.04603035303200021,
+   "mad_nulla_finestre": 0
+  },
+  "P4_ST_FD": {
+   "piatti": 0.016991158905188763,
+   "distinti": 0.0013418295421429739,
+   "mad_nulla_finestre": 0
+  },
+  "P4_ST_GOV": {
+   "piatti": 0.005182161161569129,
+   "distinti": 0.04711917403695456,
+   "mad_nulla_finestre": 0
+  },
+  "P4_ST_LD": {
+   "piatti": 0.007443095271164097,
+   "distinti": 0.03925822562526118,
+   "mad_nulla_finestre": 0
+  },
+  "P4_ST_PO": {
+   "piatti": 0.006088356303179197,
+   "distinti": 0.048848642228582956,
+   "mad_nulla_finestre": 0
+  },
+  "P4_ST_PS": {
+   "piatti": 0.9999829234583868,
+   "distinti": 8.18984834682957e-06,
+   "mad_nulla_finestre": 38
+  },
+  "P4_ST_PT01": {
+   "piatti": 0.6676335784006794,
+   "distinti": 0.0010190077563441955,
+   "mad_nulla_finestre": 9
+  },
+  "P4_ST_TT01": {
+   "piatti": 0.4663182293220158,
+   "distinti": 0.0005973560256741338,
+   "mad_nulla_finestre": 2
+  }
+ },
+ "finestre": 38,
+ "finestre_test": 22,
+ "finestre_training": 16,
+ "finestre_pulite": 18,
+ "finestre_pulite_test": 2,
+ "finestre_con_attacchi": 20,
+ "attacchi": 50,
+ "attacchi_interi_in_una_finestra": 50,
+ "durate_s": [
+  17,
+  45,
+  51,
+  60,
+  65,
+  68,
+  79,
+  83,
+  84,
+  89,
+  98,
+  99,
+  106,
+  110,
+  119,
+  119,
+  120,
+  120,
+  120,
+  123,
+  132,
+  151,
+  152,
+  152,
+  153,
+  172,
+  184,
+  189,
+  190,
+  192,
+  199,
+  203,
+  238,
+  241,
+  254,
+  254,
+  255,
+  256,
+  256,
+  258,
+  258,
+  259,
+  261,
+  262,
+  262,
+  262,
+  263,
+  421,
+  421,
+  422
+ ],
+ "domanda_lac": "The time series has multiple channels. Find every anomaly across all channels. Respond with exactly one JSON object on a single line, no other text:\n{\"anomalies\": [{\"channel\": \"<name>\", \"start\": <int>, \"end\": <int>}, ...]}\nReport an empty list `\"anomalies\": []` if no anomalies are present. `channel` must match a channel name from the input verbatim. `start` is inclusive, `end` is exclusive. (Here L = {L}, C = {C}.)",
+ "domanda_loc": "Does the time series contain an anomaly, and if so where? Respond with exactly one JSON object on a single line, no other text:\n{\"present\": true|false, \"start\": <int>, \"end\": <int>}\nIf \"present\" is false, \"start\" and \"end\" are ignored. If true, report the inclusive start and exclusive end integer sample indices of the anomaly. (Here L = {L}.)",
+ "tipo_lac": {
+  "category": "localize_all_channels",
+  "tier": 3,
+  "n_channels_a": 0,
+  "n_channels_b": 0,
+  "coupling_kind": null,
+  "coupling_lag": null
+ },
+ "tipo_loc": {
+  "category": "localize",
+  "tier": 2,
+  "n_channels_a": null,
+  "n_channels_b": null,
+  "coupling_kind": null,
+  "coupling_lag": null
+ },
+ "seme_fumo": 20261016,
+ "hai_mc.parquet": {
+  "righe": 38,
+  "sha256": "7d8e2280e039ef12cee1edd7e642d819ae2b9bd59a70136c2f7105897e8f249e"
+ },
+ "hai_loc.parquet": {
+  "righe": 608,
+  "sha256": "3e10239344c47d65823328a50c7a59a77160fe0fe0100c55a5be2abf3d7f8f7d"
+ },
+ "hai_fumo.parquet": {
+  "righe": 2,
+  "sha256": "00b0944ad76406706f2b5803efe00b6fe01d81cb255dcbfeeea6a7dea7ac30b3"
+ }
+}

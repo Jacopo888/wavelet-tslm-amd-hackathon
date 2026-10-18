@@ -1,0 +1,1 @@
+We want to be honest about the limit. The model also flags windows with no attack, so it is not an alarm: it is a ranking of the most anomalous stretches. On a second dataset, MetroPT-3, with four slow air-leak failures, it did not transfer. Closing that gap needs adaptation on labelled industrial data.

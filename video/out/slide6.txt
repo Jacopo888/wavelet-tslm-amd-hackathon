@@ -1,0 +1,1 @@
+Everything ran on the AMD Developer Cloud: four MI300X droplets, under ten dollars in total, with the same checkpoint and no retraining. A tool that ranks suspicious stretches for an engineer to review is what Intelligent Industry needs first.

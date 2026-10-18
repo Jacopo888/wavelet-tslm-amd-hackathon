@@ -1,0 +1,836 @@
+{
+ "insieme": "hic",
+ "ruolo": "PRIMARIO: scansione di 6 canali (almeno un canale «presente»)",
+ "righe": 15,
+ "M1_guasti_rilevati": {
+  "rilevati": 4,
+  "su": 4,
+  "col_centro": 4,
+  "attesi_a_caso": 1.7796287655804115,
+  "per_guasto": [
+   {
+    "guasto": "1",
+    "campioni": 720,
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.5328195124553767,
+    "finestre": [
+     {
+      "finestra": 4,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.31759360628355365,
+      "emessi": 6
+     },
+     {
+      "finestra": 5,
+      "tocca": true,
+      "centro_dentro": true,
+      "p_caso": 0.31539256981413016,
+      "emessi": 6
+     }
+    ]
+   },
+   {
+    "guasto": "2",
+    "campioni": 196,
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.23242863981801642,
+    "finestre": [
+     {
+      "finestra": 7,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.12461104521777747,
+      "emessi": 6
+     },
+     {
+      "finestra": 8,
+      "tocca": true,
+      "centro_dentro": true,
+      "p_caso": 0.12316535867997284,
+      "emessi": 6
+     }
+    ]
+   },
+   {
+    "guasto": "3",
+    "campioni": 1437,
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.8236276865217507,
+    "finestre": [
+     {
+      "finestra": 8,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.5814794847428104,
+      "emessi": 6
+     },
+     {
+      "finestra": 9,
+      "tocca": true,
+      "centro_dentro": true,
+      "p_caso": 0.5785814385470093,
+      "emessi": 6
+     }
+    ]
+   },
+   {
+    "guasto": "4",
+    "campioni": 136,
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.19075292678526767,
+    "finestre": [
+     {
+      "finestra": 10,
+      "tocca": true,
+      "centro_dentro": true,
+      "p_caso": 0.10219653334425399,
+      "emessi": 6
+     },
+     {
+      "finestra": 11,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.09863672477327343,
+      "emessi": 6
+     }
+    ]
+   }
+  ]
+ },
+ "M2_falsi_allarmi": {
+  "finestre_pulite_con_segnalazioni": 7,
+  "finestre_pulite": 7,
+  "wilson95": [
+   0.6456695613241317,
+   1.0
+  ],
+  "per_finestra": [
+   {
+    "finestra": 0,
+    "emessi": 6
+   },
+   {
+    "finestra": 1,
+    "emessi": 6
+   },
+   {
+    "finestra": 2,
+    "emessi": 6
+   },
+   {
+    "finestra": 3,
+    "emessi": 6
+   },
+   {
+    "finestra": 12,
+    "emessi": 6
+   },
+   {
+    "finestra": 13,
+    "emessi": 6
+   },
+   {
+    "finestra": 14,
+    "emessi": 6
+   }
+  ]
+ },
+ "M3_precisione": {
+  "emessi_che_toccano_una_zona_sospetta": 12,
+  "emessi": 90
+ },
+ "M4_iou": [
+  {
+   "finestra": 4,
+   "iou": 0.0
+  },
+  {
+   "finestra": 5,
+   "iou": 0.06461307287753569
+  },
+  {
+   "finestra": 7,
+   "iou": 0.0
+  },
+  {
+   "finestra": 8,
+   "iou": 0.05932932072226999
+  },
+  {
+   "finestra": 9,
+   "iou": 0.04709965294992563
+  },
+  {
+   "finestra": 10,
+   "iou": 0.16154873164218958
+  },
+  {
+   "finestra": 11,
+   "iou": 0.0
+  }
+ ],
+ "formato": {
+  "valide": 15,
+  "liste_vuote": 0,
+  "intervalli_emessi": 90,
+  "canali_citati": {
+   "TP3_medio": 15,
+   "calo_TP3": 15,
+   "cicli_ora": 15,
+   "corrente_media": 15,
+   "olio_medio": 15,
+   "quota_carico": 15
+  }
+ },
+ "regola": "A: M1 >= 3 e M2 <= meta' delle pulite; B: M2 > meta'; C: M1 <= 1 e M2 <= meta'; D: altrimenti. M1-caso: per guasto 1 - prod_finestre(1 - min(1, sum_intervalli (l_i + l_g - 1)/(L - l_i + 1)))",
+ "esito_regola": "B",
+ "frase": "segnala quasi ovunque: le rilevazioni non si leggono come prova",
+ "per_finestra": [
+  {
+   "finestra": 0,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 15620,
+     "end": 15767
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 711,
+     "end": 881
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 5062,
+     "end": 5191
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 2175,
+     "end": 2308
+    },
+    {
+     "channel": "olio_medio",
+     "start": 11836,
+     "end": 11977
+    },
+    {
+     "channel": "corrente_media",
+     "start": 3969,
+     "end": 4095
+    }
+   ]
+  },
+  {
+   "finestra": 1,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 6256,
+     "end": 6375
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 15996,
+     "end": 16134
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 15976,
+     "end": 16118
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 15986,
+     "end": 16126
+    },
+    {
+     "channel": "olio_medio",
+     "start": 13378,
+     "end": 13522
+    },
+    {
+     "channel": "corrente_media",
+     "start": 3662,
+     "end": 3794
+    }
+   ]
+  },
+  {
+   "finestra": 2,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 6892,
+     "end": 7037
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 5172,
+     "end": 5301
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 7771,
+     "end": 7924
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 8301,
+     "end": 8454
+    },
+    {
+     "channel": "olio_medio",
+     "start": 5210,
+     "end": 5346
+    },
+    {
+     "channel": "corrente_media",
+     "start": 6565,
+     "end": 6700
+    }
+   ]
+  },
+  {
+   "finestra": 3,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 15196,
+     "end": 15345
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 15154,
+     "end": 15304
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 15133,
+     "end": 15286
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 93,
+     "end": 248
+    },
+    {
+     "channel": "olio_medio",
+     "start": 15155,
+     "end": 15303
+    },
+    {
+     "channel": "corrente_media",
+     "start": 15146,
+     "end": 15301
+    }
+   ]
+  },
+  {
+   "finestra": 4,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "1"
+   ],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 11284,
+     "end": 11408
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 6967,
+     "end": 7099
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 6943,
+     "end": 7095
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 14581,
+     "end": 14732
+    },
+    {
+     "channel": "olio_medio",
+     "start": 6966,
+     "end": 7103
+    },
+    {
+     "channel": "corrente_media",
+     "start": 10624,
+     "end": 10773
+    }
+   ]
+  },
+  {
+   "finestra": 5,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "1"
+   ],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 3483,
+     "end": 3614
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 2848,
+     "end": 3012
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 6383,
+     "end": 6508
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 6394,
+     "end": 6529
+    },
+    {
+     "channel": "olio_medio",
+     "start": 10840,
+     "end": 10976
+    },
+    {
+     "channel": "corrente_media",
+     "start": 5589,
+     "end": 5709
+    }
+   ]
+  },
+  {
+   "finestra": 6,
+   "valida": true,
+   "pulita": false,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 11571,
+     "end": 11722
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 14979,
+     "end": 15152
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 13564,
+     "end": 13704
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 11625,
+     "end": 11755
+    },
+    {
+     "channel": "olio_medio",
+     "start": 15682,
+     "end": 15828
+    },
+    {
+     "channel": "corrente_media",
+     "start": 14468,
+     "end": 14625
+    }
+   ]
+  },
+  {
+   "finestra": 7,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "2"
+   ],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 3417,
+     "end": 3551
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 14287,
+     "end": 14435
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 5349,
+     "end": 5494
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 3427,
+     "end": 3565
+    },
+    {
+     "channel": "olio_medio",
+     "start": 7468,
+     "end": 7605
+    },
+    {
+     "channel": "corrente_media",
+     "start": 6276,
+     "end": 6428
+    }
+   ]
+  },
+  {
+   "finestra": 8,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "2",
+    "3"
+   ],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 12657,
+     "end": 12803
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 1067,
+     "end": 1207
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 1830,
+     "end": 1966
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 6682,
+     "end": 6815
+    },
+    {
+     "channel": "olio_medio",
+     "start": 16123,
+     "end": 16261
+    },
+    {
+     "channel": "corrente_media",
+     "start": 4406,
+     "end": 4544
+    }
+   ]
+  },
+  {
+   "finestra": 9,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "3"
+   ],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 259,
+     "end": 405
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 4485,
+     "end": 4598
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 4459,
+     "end": 4607
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 1769,
+     "end": 1891
+    },
+    {
+     "channel": "olio_medio",
+     "start": 7938,
+     "end": 8075
+    },
+    {
+     "channel": "corrente_media",
+     "start": 10911,
+     "end": 11033
+    }
+   ]
+  },
+  {
+   "finestra": 10,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "4"
+   ],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 4575,
+     "end": 4710
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 15664,
+     "end": 15807
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 15158,
+     "end": 15295
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 15691,
+     "end": 15840
+    },
+    {
+     "channel": "olio_medio",
+     "start": 13398,
+     "end": 13535
+    },
+    {
+     "channel": "corrente_media",
+     "start": 14567,
+     "end": 14716
+    }
+   ]
+  },
+  {
+   "finestra": 11,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "4"
+   ],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 15515,
+     "end": 15639
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 12357,
+     "end": 12518
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 6381,
+     "end": 6483
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 8532,
+     "end": 8658
+    },
+    {
+     "channel": "olio_medio",
+     "start": 13305,
+     "end": 13440
+    },
+    {
+     "channel": "corrente_media",
+     "start": 6377,
+     "end": 6522
+    }
+   ]
+  },
+  {
+   "finestra": 12,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 7346,
+     "end": 7471
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 1460,
+     "end": 1623
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 6658,
+     "end": 6788
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 347,
+     "end": 463
+    },
+    {
+     "channel": "olio_medio",
+     "start": 5664,
+     "end": 5802
+    },
+    {
+     "channel": "corrente_media",
+     "start": 11056,
+     "end": 11204
+    }
+   ]
+  },
+  {
+   "finestra": 13,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 15478,
+     "end": 15626
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 12917,
+     "end": 13092
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 14207,
+     "end": 14355
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 9972,
+     "end": 10101
+    },
+    {
+     "channel": "olio_medio",
+     "start": 12931,
+     "end": 13082
+    },
+    {
+     "channel": "corrente_media",
+     "start": 2866,
+     "end": 3012
+    }
+   ]
+  },
+  {
+   "finestra": 14,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "quota_carico",
+     "start": 10904,
+     "end": 11055
+    },
+    {
+     "channel": "cicli_ora",
+     "start": 16091,
+     "end": 16253
+    },
+    {
+     "channel": "calo_TP3",
+     "start": 15575,
+     "end": 15723
+    },
+    {
+     "channel": "TP3_medio",
+     "start": 6476,
+     "end": 6627
+    },
+    {
+     "channel": "olio_medio",
+     "start": 9507,
+     "end": 9626
+    },
+    {
+     "channel": "corrente_media",
+     "start": 10953,
+     "end": 11099
+    }
+   ]
+  }
+ ],
+ "risposte_a_un_canale": {
+  "righe": 90,
+  "valide": 90,
+  "assente": 0,
+  "presente": 90
+ },
+ "per_canale": {
+  "quota_carico": {
+   "M1": 1,
+   "M1_caso": 0.35987159700946114,
+   "M2": 7,
+   "assente": 0,
+   "presente": 15,
+   "non_valide": 0
+  },
+  "cicli_ora": {
+   "M1": 1,
+   "M1_caso": 0.363277512519096,
+   "M2": 7,
+   "assente": 0,
+   "presente": 15,
+   "non_valide": 0
+  },
+  "calo_TP3": {
+   "M1": 0,
+   "M1_caso": 0.35957092178219363,
+   "M2": 7,
+   "assente": 0,
+   "presente": 15,
+   "non_valide": 0
+  },
+  "TP3_medio": {
+   "M1": 1,
+   "M1_caso": 0.35995056498976286,
+   "M2": 7,
+   "assente": 0,
+   "presente": 15,
+   "non_valide": 0
+  },
+  "olio_medio": {
+   "M1": 0,
+   "M1_caso": 0.3604304877091934,
+   "M2": 7,
+   "assente": 0,
+   "presente": 15,
+   "non_valide": 0
+  },
+  "corrente_media": {
+   "M1": 2,
+   "M1_caso": 0.36155147649634056,
+   "M2": 7,
+   "assente": 0,
+   "presente": 15,
+   "non_valide": 0
+  }
+ }
+}

@@ -1,0 +1,1 @@
+Industrial plants record hundreds of thousands of sensor readings every day. Finding the few seconds where something goes wrong is a needle-in-a-haystack problem. We built a model that reads those recordings directly, in a single call, and runs on AMD Instinct MI300X.

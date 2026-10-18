@@ -1,0 +1,1142 @@
+{
+ "insieme": "a7",
+ "ruolo": "accanto (stesse regole, senza esito proprio)",
+ "righe": 23,
+ "M1_guasti_rilevati": {
+  "rilevati": 0,
+  "su": 4,
+  "col_centro": 0,
+  "attesi_a_caso": 2.1012855958747245,
+  "per_guasto": [
+   {
+    "guasto": "1",
+    "campioni": 8657,
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.7204712698183908,
+    "finestre": [
+     {
+      "finestra": 7,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.4711117981884503,
+      "emessi": 7
+     },
+     {
+      "finestra": 8,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.47147860507349865,
+      "emessi": 7
+     }
+    ]
+   },
+   {
+    "guasto": "2",
+    "campioni": 2360,
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.2503132253289213,
+    "finestre": [
+     {
+      "finestra": 11,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.1339374585325949,
+      "emessi": 7
+     },
+     {
+      "finestra": 12,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.13437339825267847,
+      "emessi": 7
+     }
+    ]
+   },
+   {
+    "guasto": "3",
+    "campioni": 17315,
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.9868411643015185,
+    "finestre": [
+     {
+      "finestra": 12,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.9339908376290559,
+      "emessi": 7
+     },
+     {
+      "finestra": 13,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.8006513758721199,
+      "emessi": 6
+     }
+    ]
+   },
+   {
+    "guasto": "4",
+    "campioni": 1622,
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.14365993642589392,
+    "finestre": [
+     {
+      "finestra": 16,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.08141000199470015,
+      "emessi": 6
+     },
+     {
+      "finestra": 17,
+      "tocca": false,
+      "centro_dentro": false,
+      "p_caso": 0.06776683239134786,
+      "emessi": 5
+     }
+    ]
+   }
+  ]
+ },
+ "M2_falsi_allarmi": {
+  "finestre_pulite_con_segnalazioni": 15,
+  "finestre_pulite": 15,
+  "wilson95": [
+   0.7961166964035129,
+   1.0
+  ],
+  "per_finestra": [
+   {
+    "finestra": 0,
+    "emessi": 4
+   },
+   {
+    "finestra": 1,
+    "emessi": 4
+   },
+   {
+    "finestra": 2,
+    "emessi": 6
+   },
+   {
+    "finestra": 3,
+    "emessi": 7
+   },
+   {
+    "finestra": 4,
+    "emessi": 6
+   },
+   {
+    "finestra": 5,
+    "emessi": 7
+   },
+   {
+    "finestra": 6,
+    "emessi": 7
+   },
+   {
+    "finestra": 10,
+    "emessi": 7
+   },
+   {
+    "finestra": 14,
+    "emessi": 7
+   },
+   {
+    "finestra": 15,
+    "emessi": 7
+   },
+   {
+    "finestra": 18,
+    "emessi": 6
+   },
+   {
+    "finestra": 19,
+    "emessi": 6
+   },
+   {
+    "finestra": 20,
+    "emessi": 5
+   },
+   {
+    "finestra": 21,
+    "emessi": 6
+   },
+   {
+    "finestra": 22,
+    "emessi": 6
+   }
+  ]
+ },
+ "M3_precisione": {
+  "emessi_che_toccano_una_zona_sospetta": 15,
+  "emessi": 143
+ },
+ "M4_iou": [
+  {
+   "finestra": 7,
+   "iou": 0.0
+  },
+  {
+   "finestra": 8,
+   "iou": 0.0
+  },
+  {
+   "finestra": 11,
+   "iou": 0.0
+  },
+  {
+   "finestra": 12,
+   "iou": 0.0
+  },
+  {
+   "finestra": 13,
+   "iou": 0.0
+  },
+  {
+   "finestra": 16,
+   "iou": 0.0
+  },
+  {
+   "finestra": 17,
+   "iou": 0.0
+  }
+ ],
+ "formato": {
+  "valide": 23,
+  "liste_vuote": 0,
+  "intervalli_emessi": 143,
+  "canali_citati": {
+   "ch_00": 23,
+   "ch_01": 20,
+   "ch_02": 16,
+   "ch_03": 22,
+   "ch_04": 21,
+   "ch_05": 23,
+   "ch_06": 18
+  }
+ },
+ "regola": "A: M1 >= 3 e M2 <= meta' delle pulite; B: M2 > meta'; C: M1 <= 1 e M2 <= meta'; D: altrimenti. M1-caso: per guasto 1 - prod_finestre(1 - min(1, sum_intervalli (l_i + l_g - 1)/(L - l_i + 1)))",
+ "esito_regola": "B",
+ "frase": "segnala quasi ovunque: le rilevazioni non si leggono come prova",
+ "per_finestra": [
+  {
+   "finestra": 0,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 2167,
+     "end": 2327
+    },
+    {
+     "channel": "ch_03",
+     "start": 114161,
+     "end": 114328
+    },
+    {
+     "channel": "ch_05",
+     "start": 121029,
+     "end": 121167
+    },
+    {
+     "channel": "ch_06",
+     "start": 10716,
+     "end": 10874
+    }
+   ]
+  },
+  {
+   "finestra": 1,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 7735,
+     "end": 7895
+    },
+    {
+     "channel": "ch_03",
+     "start": 213,
+     "end": 378
+    },
+    {
+     "channel": "ch_05",
+     "start": 110228,
+     "end": 110367
+    },
+    {
+     "channel": "ch_06",
+     "start": 9418,
+     "end": 9579
+    }
+   ]
+  },
+  {
+   "finestra": 2,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 6128,
+     "end": 6287
+    },
+    {
+     "channel": "ch_02",
+     "start": 130550,
+     "end": 130718
+    },
+    {
+     "channel": "ch_03",
+     "start": 128731,
+     "end": 128906
+    },
+    {
+     "channel": "ch_04",
+     "start": 98526,
+     "end": 98686
+    },
+    {
+     "channel": "ch_05",
+     "start": 98531,
+     "end": 98683
+    },
+    {
+     "channel": "ch_06",
+     "start": 124130,
+     "end": 124292
+    }
+   ]
+  },
+  {
+   "finestra": 3,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 5134,
+     "end": 5297
+    },
+    {
+     "channel": "ch_01",
+     "start": 103020,
+     "end": 103172
+    },
+    {
+     "channel": "ch_02",
+     "start": 125266,
+     "end": 125431
+    },
+    {
+     "channel": "ch_03",
+     "start": 121018,
+     "end": 121192
+    },
+    {
+     "channel": "ch_04",
+     "start": 103017,
+     "end": 103176
+    },
+    {
+     "channel": "ch_05",
+     "start": 125225,
+     "end": 125365
+    },
+    {
+     "channel": "ch_06",
+     "start": 25885,
+     "end": 26052
+    }
+   ]
+  },
+  {
+   "finestra": 4,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 239,
+     "end": 399
+    },
+    {
+     "channel": "ch_01",
+     "start": 476,
+     "end": 624
+    },
+    {
+     "channel": "ch_03",
+     "start": 5678,
+     "end": 5848
+    },
+    {
+     "channel": "ch_04",
+     "start": 472,
+     "end": 628
+    },
+    {
+     "channel": "ch_05",
+     "start": 480,
+     "end": 613
+    },
+    {
+     "channel": "ch_06",
+     "start": 12011,
+     "end": 12170
+    }
+   ]
+  },
+  {
+   "finestra": 5,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 583,
+     "end": 744
+    },
+    {
+     "channel": "ch_01",
+     "start": 95389,
+     "end": 95540
+    },
+    {
+     "channel": "ch_02",
+     "start": 129082,
+     "end": 129247
+    },
+    {
+     "channel": "ch_03",
+     "start": 2770,
+     "end": 2941
+    },
+    {
+     "channel": "ch_04",
+     "start": 95386,
+     "end": 95543
+    },
+    {
+     "channel": "ch_05",
+     "start": 95389,
+     "end": 95534
+    },
+    {
+     "channel": "ch_06",
+     "start": 129253,
+     "end": 129412
+    }
+   ]
+  },
+  {
+   "finestra": 6,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 527,
+     "end": 687
+    },
+    {
+     "channel": "ch_01",
+     "start": 122580,
+     "end": 122718
+    },
+    {
+     "channel": "ch_02",
+     "start": 11859,
+     "end": 12025
+    },
+    {
+     "channel": "ch_03",
+     "start": 8272,
+     "end": 8445
+    },
+    {
+     "channel": "ch_04",
+     "start": 29849,
+     "end": 30007
+    },
+    {
+     "channel": "ch_05",
+     "start": 29853,
+     "end": 29998
+    },
+    {
+     "channel": "ch_06",
+     "start": 122323,
+     "end": 122483
+    }
+   ]
+  },
+  {
+   "finestra": 7,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "1"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 3377,
+     "end": 3549
+    },
+    {
+     "channel": "ch_01",
+     "start": 113187,
+     "end": 113334
+    },
+    {
+     "channel": "ch_02",
+     "start": 130556,
+     "end": 130717
+    },
+    {
+     "channel": "ch_03",
+     "start": 10839,
+     "end": 11008
+    },
+    {
+     "channel": "ch_04",
+     "start": 113183,
+     "end": 113338
+    },
+    {
+     "channel": "ch_05",
+     "start": 2431,
+     "end": 2552
+    },
+    {
+     "channel": "ch_06",
+     "start": 3679,
+     "end": 3839
+    }
+   ]
+  },
+  {
+   "finestra": 8,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "1"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 6364,
+     "end": 6537
+    },
+    {
+     "channel": "ch_01",
+     "start": 119667,
+     "end": 119822
+    },
+    {
+     "channel": "ch_02",
+     "start": 221,
+     "end": 387
+    },
+    {
+     "channel": "ch_03",
+     "start": 7150,
+     "end": 7322
+    },
+    {
+     "channel": "ch_04",
+     "start": 119662,
+     "end": 119824
+    },
+    {
+     "channel": "ch_05",
+     "start": 100688,
+     "end": 100832
+    },
+    {
+     "channel": "ch_06",
+     "start": 125185,
+     "end": 125343
+    }
+   ]
+  },
+  {
+   "finestra": 9,
+   "valida": true,
+   "pulita": false,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 3788,
+     "end": 3958
+    },
+    {
+     "channel": "ch_01",
+     "start": 35148,
+     "end": 35291
+    },
+    {
+     "channel": "ch_02",
+     "start": 4237,
+     "end": 4401
+    },
+    {
+     "channel": "ch_03",
+     "start": 126655,
+     "end": 126827
+    },
+    {
+     "channel": "ch_04",
+     "start": 54126,
+     "end": 54288
+    },
+    {
+     "channel": "ch_05",
+     "start": 118983,
+     "end": 119130
+    },
+    {
+     "channel": "ch_06",
+     "start": 120399,
+     "end": 120559
+    }
+   ]
+  },
+  {
+   "finestra": 10,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 1568,
+     "end": 1727
+    },
+    {
+     "channel": "ch_01",
+     "start": 127568,
+     "end": 127708
+    },
+    {
+     "channel": "ch_02",
+     "start": 118752,
+     "end": 118920
+    },
+    {
+     "channel": "ch_03",
+     "start": 128587,
+     "end": 128762
+    },
+    {
+     "channel": "ch_04",
+     "start": 127564,
+     "end": 127712
+    },
+    {
+     "channel": "ch_05",
+     "start": 127565,
+     "end": 127703
+    },
+    {
+     "channel": "ch_06",
+     "start": 73860,
+     "end": 74021
+    }
+   ]
+  },
+  {
+   "finestra": 11,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "2"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 3712,
+     "end": 3871
+    },
+    {
+     "channel": "ch_01",
+     "start": 38622,
+     "end": 38772
+    },
+    {
+     "channel": "ch_02",
+     "start": 122353,
+     "end": 122516
+    },
+    {
+     "channel": "ch_03",
+     "start": 0,
+     "end": 131
+    },
+    {
+     "channel": "ch_04",
+     "start": 38620,
+     "end": 38779
+    },
+    {
+     "channel": "ch_05",
+     "start": 38578,
+     "end": 38708
+    },
+    {
+     "channel": "ch_06",
+     "start": 122488,
+     "end": 122619
+    }
+   ]
+  },
+  {
+   "finestra": 12,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "2",
+    "3"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 3602,
+     "end": 3764
+    },
+    {
+     "channel": "ch_01",
+     "start": 122093,
+     "end": 122250
+    },
+    {
+     "channel": "ch_02",
+     "start": 122174,
+     "end": 122333
+    },
+    {
+     "channel": "ch_03",
+     "start": 8186,
+     "end": 8356
+    },
+    {
+     "channel": "ch_04",
+     "start": 122088,
+     "end": 122254
+    },
+    {
+     "channel": "ch_05",
+     "start": 10244,
+     "end": 10383
+    },
+    {
+     "channel": "ch_06",
+     "start": 77134,
+     "end": 77260
+    }
+   ]
+  },
+  {
+   "finestra": 13,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "3"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 127186,
+     "end": 127348
+    },
+    {
+     "channel": "ch_01",
+     "start": 130216,
+     "end": 130362
+    },
+    {
+     "channel": "ch_02",
+     "start": 129368,
+     "end": 129533
+    },
+    {
+     "channel": "ch_03",
+     "start": 21053,
+     "end": 21228
+    },
+    {
+     "channel": "ch_04",
+     "start": 130212,
+     "end": 130366
+    },
+    {
+     "channel": "ch_05",
+     "start": 130227,
+     "end": 130360
+    }
+   ]
+  },
+  {
+   "finestra": 14,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 2085,
+     "end": 2257
+    },
+    {
+     "channel": "ch_01",
+     "start": 64677,
+     "end": 64828
+    },
+    {
+     "channel": "ch_02",
+     "start": 123311,
+     "end": 123471
+    },
+    {
+     "channel": "ch_03",
+     "start": 16765,
+     "end": 16932
+    },
+    {
+     "channel": "ch_04",
+     "start": 2060,
+     "end": 2209
+    },
+    {
+     "channel": "ch_05",
+     "start": 2068,
+     "end": 2208
+    },
+    {
+     "channel": "ch_06",
+     "start": 125185,
+     "end": 125300
+    }
+   ]
+  },
+  {
+   "finestra": 15,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 4562,
+     "end": 4735
+    },
+    {
+     "channel": "ch_01",
+     "start": 30972,
+     "end": 31110
+    },
+    {
+     "channel": "ch_02",
+     "start": 1362,
+     "end": 1524
+    },
+    {
+     "channel": "ch_03",
+     "start": 109023,
+     "end": 109187
+    },
+    {
+     "channel": "ch_04",
+     "start": 30966,
+     "end": 31116
+    },
+    {
+     "channel": "ch_05",
+     "start": 72535,
+     "end": 72685
+    },
+    {
+     "channel": "ch_06",
+     "start": 60929,
+     "end": 61033
+    }
+   ]
+  },
+  {
+   "finestra": 16,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "4"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 4210,
+     "end": 4371
+    },
+    {
+     "channel": "ch_01",
+     "start": 100594,
+     "end": 100729
+    },
+    {
+     "channel": "ch_02",
+     "start": 124399,
+     "end": 124565
+    },
+    {
+     "channel": "ch_03",
+     "start": 5460,
+     "end": 5633
+    },
+    {
+     "channel": "ch_04",
+     "start": 100588,
+     "end": 100735
+    },
+    {
+     "channel": "ch_05",
+     "start": 7008,
+     "end": 7158
+    }
+   ]
+  },
+  {
+   "finestra": 17,
+   "valida": true,
+   "pulita": false,
+   "guasti": [
+    "4"
+   ],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 6225,
+     "end": 6389
+    },
+    {
+     "channel": "ch_01",
+     "start": 69241,
+     "end": 69382
+    },
+    {
+     "channel": "ch_03",
+     "start": 125361,
+     "end": 125533
+    },
+    {
+     "channel": "ch_04",
+     "start": 69235,
+     "end": 69387
+    },
+    {
+     "channel": "ch_05",
+     "start": 22384,
+     "end": 22522
+    }
+   ]
+  },
+  {
+   "finestra": 18,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 129074,
+     "end": 129237
+    },
+    {
+     "channel": "ch_01",
+     "start": 3705,
+     "end": 3846
+    },
+    {
+     "channel": "ch_03",
+     "start": 126899,
+     "end": 127071
+    },
+    {
+     "channel": "ch_04",
+     "start": 3700,
+     "end": 3851
+    },
+    {
+     "channel": "ch_05",
+     "start": 79932,
+     "end": 80073
+    },
+    {
+     "channel": "ch_06",
+     "start": 7954,
+     "end": 8128
+    }
+   ]
+  },
+  {
+   "finestra": 19,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 2321,
+     "end": 2484
+    },
+    {
+     "channel": "ch_01",
+     "start": 66880,
+     "end": 67031
+    },
+    {
+     "channel": "ch_03",
+     "start": 69,
+     "end": 241
+    },
+    {
+     "channel": "ch_04",
+     "start": 66876,
+     "end": 67035
+    },
+    {
+     "channel": "ch_05",
+     "start": 14392,
+     "end": 14539
+    },
+    {
+     "channel": "ch_06",
+     "start": 125124,
+     "end": 125291
+    }
+   ]
+  },
+  {
+   "finestra": 20,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 127106,
+     "end": 127268
+    },
+    {
+     "channel": "ch_01",
+     "start": 1344,
+     "end": 1496
+    },
+    {
+     "channel": "ch_04",
+     "start": 1340,
+     "end": 1499
+    },
+    {
+     "channel": "ch_05",
+     "start": 1349,
+     "end": 1493
+    },
+    {
+     "channel": "ch_06",
+     "start": 9290,
+     "end": 9462
+    }
+   ]
+  },
+  {
+   "finestra": 21,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 607,
+     "end": 770
+    },
+    {
+     "channel": "ch_01",
+     "start": 28290,
+     "end": 28420
+    },
+    {
+     "channel": "ch_02",
+     "start": 123081,
+     "end": 123248
+    },
+    {
+     "channel": "ch_03",
+     "start": 120659,
+     "end": 120835
+    },
+    {
+     "channel": "ch_04",
+     "start": 28281,
+     "end": 28427
+    },
+    {
+     "channel": "ch_05",
+     "start": 21409,
+     "end": 21565
+    }
+   ]
+  },
+  {
+   "finestra": 22,
+   "valida": true,
+   "pulita": true,
+   "guasti": [],
+   "emessi": [
+    {
+     "channel": "ch_00",
+     "start": 6449,
+     "end": 6612
+    },
+    {
+     "channel": "ch_01",
+     "start": 11800,
+     "end": 11930
+    },
+    {
+     "channel": "ch_02",
+     "start": 99,
+     "end": 265
+    },
+    {
+     "channel": "ch_03",
+     "start": 6235,
+     "end": 6407
+    },
+    {
+     "channel": "ch_04",
+     "start": 11791,
+     "end": 11937
+    },
+    {
+     "channel": "ch_05",
+     "start": 18655,
+     "end": 18812
+    }
+   ]
+  }
+ ]
+}

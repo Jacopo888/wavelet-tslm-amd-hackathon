@@ -1,0 +1,4870 @@
+{
+ "M1_attacchi_rilevati": {
+  "rilevati": 37,
+  "su": 50,
+  "col_centro": 35,
+  "attesi_a_caso": 11.777104284925784,
+  "p_valore_una_coda": 1.6705853644677182e-14,
+  "per_attacco": [
+   {
+    "attacco": "test1-a00",
+    "durata_s": 192,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.14941930442875817,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test1-w00",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.14941930442875814
+     }
+    ]
+   },
+   {
+    "attacco": "test1-a01",
+    "durata_s": 98,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.10621404306297222,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test1-w00",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D"
+      ],
+      "p_caso": 0.10621404306297226
+     }
+    ]
+   },
+   {
+    "attacco": "test1-a02",
+    "durata_s": 190,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.27247082544055823,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test1-w00",
+      "tocca": true,
+      "centro_dentro": false,
+      "canali_che_toccano": [
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.14850004354863505
+     },
+     {
+      "finestra": "test1-w01",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D",
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.14559106075421632
+     }
+    ]
+   },
+   {
+    "attacco": "test1-a03",
+    "durata_s": 60,
+    "processi": [
+     "P2"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.16697958963048531,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test1-w00",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.08874808634063326
+     },
+     {
+      "finestra": "test1-w01",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.08585057777897365
+     }
+    ]
+   },
+   {
+    "attacco": "test1-a04",
+    "durata_s": 89,
+    "processi": [
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.1911309120556567,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test1-w00",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02"
+      ],
+      "p_caso": 0.10207736910241828
+     },
+     {
+      "finestra": "test1-w01",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02"
+      ],
+      "p_caso": 0.0991773009042201
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a00",
+    "durata_s": 83,
+    "processi": [
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.10385610936570411,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w00",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02",
+       "P2_VT01",
+       "P2_VXT02",
+       "P2_VYT02"
+      ],
+      "p_caso": 0.1038561093657041
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a01",
+    "durata_s": 422,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.25971764238068007,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test2-w00",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.25971764238068007
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a02",
+    "durata_s": 17,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": false,
+    "p_caso": 0.07351138612385044,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w00",
+      "tocca": true,
+      "centro_dentro": false,
+      "canali_che_toccano": [
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.0735113861238504
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a03",
+    "durata_s": 259,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.3372022258863854,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w00",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.18477537134398067
+     },
+     {
+      "finestra": "test2-w01",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D",
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.18697528163948607
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a04",
+    "durata_s": 123,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.23147243566179743,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test2-w00",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.12224685072440332
+     },
+     {
+      "finestra": "test2-w01",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.12443770213474843
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a05",
+    "durata_s": 256,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.334954306776192,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w00",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D"
+      ],
+      "p_caso": 0.18339606574207826
+     },
+     {
+      "finestra": "test2-w01",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.1855957762092345
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a06",
+    "durata_s": 68,
+    "processi": [
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.17786664767992766,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w01",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02",
+       "P2_VT01",
+       "P2_VXT02",
+       "P2_VYT02"
+      ],
+      "p_caso": 0.09914676924680305
+     },
+     {
+      "finestra": "test2-w02",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02",
+       "P2_VT01",
+       "P2_VXT02",
+       "P2_VYT02"
+      ],
+      "p_caso": 0.08738368886939268
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a07",
+    "durata_s": 261,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.3213297732499264,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w01",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.18789495192632044
+     },
+     {
+      "finestra": "test2-w02",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D",
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.16430734132254754
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a08",
+    "durata_s": 199,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.2767317380839799,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test2-w01",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.15938517303445474
+     },
+     {
+      "finestra": "test2-w02",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.13959611618215584
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a09",
+    "durata_s": 421,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.4366180201750286,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test2-w02",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.2280782449106552
+     },
+     {
+      "finestra": "test2-w03",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.27015662389284045
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a10",
+    "durata_s": 45,
+    "processi": [
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.15733432842332373,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w02",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.07821662147860221
+     },
+     {
+      "finestra": "test2-w03",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02"
+      ],
+      "p_caso": 0.08583112777714827
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a11",
+    "durata_s": 152,
+    "processi": [
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.25458376214136846,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w03",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_VT01",
+       "P2_VXT02",
+       "P2_VYT02"
+      ],
+      "p_caso": 0.1382854577887947
+     },
+     {
+      "finestra": "test2-w04",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.13496151991835506
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a12",
+    "durata_s": 254,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.335903224829201,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w03",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D",
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.18828865088400906
+     },
+     {
+      "finestra": "test2-w04",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.18185599364349694
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a13",
+    "durata_s": 152,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.25458376214136846,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test2-w03",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.1382854577887947
+     },
+     {
+      "finestra": "test2-w04",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.13496151991835506
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a14",
+    "durata_s": 151,
+    "processi": [
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.33585371569311273,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w04",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.13450177017595172
+     },
+     {
+      "finestra": "test2-w05",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.12286680557441387
+     },
+     {
+      "finestra": "test2-w06",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02"
+      ],
+      "p_caso": 0.12515318223592245
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a15",
+    "durata_s": 65,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.24577471895847425,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w04",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D"
+      ],
+      "p_caso": 0.09496329232926341
+     },
+     {
+      "finestra": "test2-w05",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.0859711967989529
+     },
+     {
+      "finestra": "test2-w06",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D"
+      ],
+      "p_caso": 0.08825160036307429
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a16",
+    "durata_s": 184,
+    "processi": [
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.36841848592468773,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w04",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02",
+       "P2_VT01",
+       "P2_VXT02",
+       "P2_VYT02"
+      ],
+      "p_caso": 0.14967351167526227
+     },
+     {
+      "finestra": "test2-w05",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02",
+       "P2_VT01",
+       "P2_VXT02",
+       "P2_VYT02"
+      ],
+      "p_caso": 0.13702442289523029
+     },
+     {
+      "finestra": "test2-w06",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_VT01",
+       "P2_VXT02",
+       "P2_VYT02"
+      ],
+      "p_caso": 0.13931309155922467
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a17",
+    "durata_s": 99,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.1930570030280082,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w05",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D",
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.10055783282646073
+     },
+     {
+      "finestra": "test2-w06",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.10284059784768866
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a18",
+    "durata_s": 119,
+    "processi": [
+     "P3"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.2084001313313304,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test2-w05",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P3_LCP01D"
+      ],
+      "p_caso": 0.10913820696028884
+     },
+     {
+      "finestra": "test2-w06",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P3_LCP01D"
+      ],
+      "p_caso": 0.11142236107393243
+     }
+    ]
+   },
+   {
+    "attacco": "test2-a19",
+    "durata_s": 119,
+    "processi": [
+     "P3"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.11142236107393244,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test2-w06",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.11142236107393243
+     }
+    ]
+   },
+   {
+    "attacco": "test3-a00",
+    "durata_s": 132,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.23579275951572576,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test3-w02",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.11427843162140179
+     },
+     {
+      "finestra": "test3-w03",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D"
+      ],
+      "p_caso": 0.13719246796345716
+     }
+    ]
+   },
+   {
+    "attacco": "test3-a01",
+    "durata_s": 421,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.4507440604933509,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test3-w02",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.23826099899947434
+     },
+     {
+      "finestra": "test3-w03",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.2789447057519507
+     }
+    ]
+   },
+   {
+    "attacco": "test3-a02",
+    "durata_s": 189,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.16515052178333312,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test3-w03",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.16515052178333306
+     }
+    ]
+   },
+   {
+    "attacco": "test3-a03",
+    "durata_s": 106,
+    "processi": [
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.2239271415923071,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test3-w03",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_VYT02"
+      ],
+      "p_caso": 0.12443967148421553
+     },
+     {
+      "finestra": "test3-w04",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_VXT02",
+       "P2_VYT02"
+      ],
+      "p_caso": 0.1136272017677398
+     }
+    ]
+   },
+   {
+    "attacco": "test3-a04",
+    "durata_s": 84,
+    "processi": [
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.28602841683294644,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test3-w03",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02",
+       "P2_VT01",
+       "P2_VXT02"
+      ],
+      "p_caso": 0.11364884369408798
+     },
+     {
+      "finestra": "test3-w04",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.10351283179636755
+     },
+     {
+      "finestra": "test3-w05",
+      "tocca": true,
+      "centro_dentro": false,
+      "canali_che_toccano": [
+       "P2_VXT02",
+       "P2_VYT02"
+      ],
+      "p_caso": 0.1014732035951246
+     }
+    ]
+   },
+   {
+    "attacco": "test3-a05",
+    "durata_s": 238,
+    "processi": [
+     "P1",
+     "P2"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.316549686103462,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test3-w04",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.1743134215959731
+     },
+     {
+      "finestra": "test3-w05",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.1722642322495033
+     }
+    ]
+   },
+   {
+    "attacco": "test3-a06",
+    "durata_s": 110,
+    "processi": [
+     "P1",
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.21579437000164237,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test3-w04",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D",
+       "P2_SIT02",
+       "P2_VT01"
+      ],
+      "p_caso": 0.1154661781261711
+     },
+     {
+      "finestra": "test3-w05",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D"
+      ],
+      "p_caso": 0.11342493570560411
+     }
+    ]
+   },
+   {
+    "attacco": "test3-a07",
+    "durata_s": 255,
+    "processi": [
+     "P1",
+     "P2"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.18007882632173988,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test3-w05",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.18007882632173994
+     }
+    ]
+   },
+   {
+    "attacco": "test4-a00",
+    "durata_s": 254,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.17819475243638616,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test4-w00",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.17819475243638616
+     }
+    ]
+   },
+   {
+    "attacco": "test4-a01",
+    "durata_s": 262,
+    "processi": [
+     "P1",
+     "P3"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.18187186339330852,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test4-w00",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D"
+      ],
+      "p_caso": 0.1818718633933085
+     }
+    ]
+   },
+   {
+    "attacco": "test4-a02",
+    "durata_s": 263,
+    "processi": [
+     "P1",
+     "P3"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.3303299136691005,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test4-w00",
+      "tocca": true,
+      "centro_dentro": false,
+      "canali_che_toccano": [
+       "P3_LCV01D"
+      ],
+      "p_caso": 0.18233150226292386
+     },
+     {
+      "finestra": "test4-w01",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D",
+       "P3_LCV01D"
+      ],
+      "p_caso": 0.18100050548084826
+     }
+    ]
+   },
+   {
+    "attacco": "test4-a03",
+    "durata_s": 258,
+    "processi": [
+     "P1",
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.3265634160467157,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test4-w00",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.1800333079148473
+     },
+     {
+      "finestra": "test4-w01",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_LCV01D",
+       "P2_SIT02",
+       "P3_LCP01D"
+      ],
+      "p_caso": 0.17870251260968464
+     }
+    ]
+   },
+   {
+    "attacco": "test4-a04",
+    "durata_s": 120,
+    "processi": [
+     "P2",
+     "P3"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.21843928661834644,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test4-w00",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02"
+      ],
+      "p_caso": 0.11660314390793611
+     },
+     {
+      "finestra": "test4-w01",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.11527790936556984
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a00",
+    "durata_s": 172,
+    "processi": [
+     "P1",
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.13592328278639487,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test5-w00",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02",
+       "P2_VT01",
+       "P2_VXT02",
+       "P2_VYT02",
+       "P3_FIT01"
+      ],
+      "p_caso": 0.13592328278639487
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a01",
+    "durata_s": 258,
+    "processi": [
+     "P1",
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.17282945772020264,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test5-w00",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D"
+      ],
+      "p_caso": 0.17282945772020267
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a02",
+    "durata_s": 256,
+    "processi": [
+     "P1",
+     "P2"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.323083836780064,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test5-w00",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.17197117458220715
+     },
+     {
+      "finestra": "test5-w01",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.1824968618956122
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a03",
+    "durata_s": 120,
+    "processi": [
+     "P1",
+     "P3"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.21995019102577718,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test5-w00",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P3_LCV01D",
+       "P4_ST_LD"
+      ],
+      "p_caso": 0.11360792119851108
+     },
+     {
+      "finestra": "test5-w01",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_B2016",
+       "P1_FCV03D",
+       "P3_LCV01D",
+       "P4_ST_LD"
+      ],
+      "p_caso": 0.1199720443926506
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a04",
+    "durata_s": 203,
+    "processi": [
+     "P1",
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.28375994512915526,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test5-w00",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.14922667142532559
+     },
+     {
+      "finestra": "test5-w01",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.1581305727216639
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a05",
+    "durata_s": 153,
+    "processi": [
+     "P2",
+     "P3"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.25800222369570236,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test5-w01",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.13514350746322218
+     },
+     {
+      "finestra": "test5-w02",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P3_LCV01D"
+      ],
+      "p_caso": 0.14205676582494486
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a06",
+    "durata_s": 79,
+    "processi": [
+     "P2"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.19619921302632526,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test5-w01",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02",
+       "P2_VT01",
+       "P2_VXT02",
+       "P2_VYT02"
+      ],
+      "p_caso": 0.10112265088072835
+     },
+     {
+      "finestra": "test5-w02",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02",
+       "P2_VT01",
+       "P2_VXT02",
+       "P2_VYT02"
+      ],
+      "p_caso": 0.10577256423109756
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a07",
+    "durata_s": 51,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.15348113207338832,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test5-w02",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D",
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.09204340687126349
+     },
+     {
+      "finestra": "test5-w03",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D",
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.0676659277184342
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a08",
+    "durata_s": 241,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": false,
+    "rilevato_col_centro": false,
+    "p_caso": 0.2972639179522003,
+    "toccato_da_un_canale_del_suo_processo": false,
+    "finestre": [
+     {
+      "finestra": "test5-w02",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.18520554609870918
+     },
+     {
+      "finestra": "test5-w03",
+      "tocca": false,
+      "centro_dentro": false,
+      "canali_che_toccano": [],
+      "p_caso": 0.13752962028269583
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a09",
+    "durata_s": 262,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": false,
+    "p_caso": 0.19732463040264436,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test5-w04",
+      "tocca": true,
+      "centro_dentro": false,
+      "canali_che_toccano": [
+       "P1_LCV01D"
+      ],
+      "p_caso": 0.1973246304026444
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a10",
+    "durata_s": 120,
+    "processi": [
+     "P2",
+     "P3"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.12769035557620856,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test5-w04",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P2_SIT02",
+       "P2_VT01",
+       "P2_VXT02",
+       "P2_VYT02",
+       "P3_LCV01D",
+       "P3_LIT01"
+      ],
+      "p_caso": 0.1276903555762086
+     }
+    ]
+   },
+   {
+    "attacco": "test5-a11",
+    "durata_s": 262,
+    "processi": [
+     "P1"
+    ],
+    "rilevato": true,
+    "rilevato_col_centro": true,
+    "p_caso": 0.19732463040264436,
+    "toccato_da_un_canale_del_suo_processo": true,
+    "finestre": [
+     {
+      "finestra": "test5-w04",
+      "tocca": true,
+      "centro_dentro": true,
+      "canali_che_toccano": [
+       "P1_FCV03D"
+      ],
+      "p_caso": 0.1973246304026444
+     }
+    ]
+   }
+  ]
+ },
+ "concentrazione": {
+  "sopra_il_caso": true,
+  "soglia": 0.05,
+  "frase": "gli intervalli cadono sugli attacchi più spesso che a caso"
+ },
+ "M2_falsi_allarmi": {
+  "finestre_pulite_con_segnalazioni": 18,
+  "finestre_pulite": 18,
+  "di_cui_test": [
+   2,
+   2
+  ],
+  "di_cui_training": [
+   16,
+   16
+  ],
+  "wilson95": [
+   0.8241207740667156,
+   1.0
+  ]
+ },
+ "finestre_con_attacchi_segnalate": [
+  20,
+  20
+ ],
+ "M3_precisione": {
+  "intervalli_che_toccano_un_attacco": 112,
+  "intervalli_nelle_finestre_con_attacchi": 295,
+  "attesi_a_caso": 12.92844289896426
+ },
+ "M4_iou": [
+  {
+   "finestra": "test1-w00",
+   "iou": 0.12142857142857143
+  },
+  {
+   "finestra": "test1-w01",
+   "iou": 0.187248322147651
+  },
+  {
+   "finestra": "test2-w00",
+   "iou": 0.09013605442176871
+  },
+  {
+   "finestra": "test2-w01",
+   "iou": 0.10516853932584269
+  },
+  {
+   "finestra": "test2-w02",
+   "iou": 0.1593186372745491
+  },
+  {
+   "finestra": "test2-w03",
+   "iou": 0.12888132709485325
+  },
+  {
+   "finestra": "test2-w04",
+   "iou": 0.18527667984189725
+  },
+  {
+   "finestra": "test2-w05",
+   "iou": 0.23538344722854973
+  },
+  {
+   "finestra": "test2-w06",
+   "iou": 0.30808080808080807
+  },
+  {
+   "finestra": "test3-w02",
+   "iou": 0.09698403311649911
+  },
+  {
+   "finestra": "test3-w03",
+   "iou": 0.24097610574478903
+  },
+  {
+   "finestra": "test3-w04",
+   "iou": 0.16954022988505746
+  },
+  {
+   "finestra": "test3-w05",
+   "iou": 0.10384793694946685
+  },
+  {
+   "finestra": "test4-w00",
+   "iou": 0.15853658536585366
+  },
+  {
+   "finestra": "test4-w01",
+   "iou": 0.24541284403669725
+  },
+  {
+   "finestra": "test5-w00",
+   "iou": 0.3192124105011933
+  },
+  {
+   "finestra": "test5-w01",
+   "iou": 0.21710914454277286
+  },
+  {
+   "finestra": "test5-w02",
+   "iou": 0.12803398058252427
+  },
+  {
+   "finestra": "test5-w03",
+   "iou": 0.03459972862957938
+  },
+  {
+   "finestra": "test5-w04",
+   "iou": 0.20855937311633513
+  }
+ ],
+ "per_processo": {
+  "P1": {
+   "attacchi": 34,
+   "rilevati": 23,
+   "attesi_a_caso": 8.390971604264417,
+   "toccati_da_un_canale_del_processo": 23
+  },
+  "P2": {
+   "attacchi": 22,
+   "rilevati": 18,
+   "attesi_a_caso": 5.020893009145479,
+   "toccati_da_un_canale_del_processo": 18
+  },
+  "P3": {
+   "attacchi": 8,
+   "rilevati": 7,
+   "attesi_a_caso": 1.6561063263837064,
+   "toccati_da_un_canale_del_processo": 7
+  }
+ },
+ "formato": {
+  "finestre_valide": 38,
+  "finestre_senza_intervalli": 0,
+  "intervalli_emessi": 544,
+  "canali_citati": {
+   "P1_B2016": 38,
+   "P1_B4022": 37,
+   "P1_FCV03D": 38,
+   "P1_LCV01D": 38,
+   "P2_SIT02": 38,
+   "P2_VT01": 29,
+   "P2_VXT02": 32,
+   "P2_VYT02": 33,
+   "P3_FIT01": 38,
+   "P3_LCP01D": 38,
+   "P3_LCV01D": 11,
+   "P3_LIT01": 36,
+   "P4_LD": 24,
+   "P4_ST_GOV": 38,
+   "P4_ST_LD": 38,
+   "P4_ST_PO": 38
+  },
+  "lunghezza_intervalli": {
+   "min": 67,
+   "mediana": 136,
+   "max": 182
+  }
+ },
+ "regola": "B: M2 > meta' delle pulite; A: M2 <= meta' e p(M1) < 0,05; C: altrimenti. M1-caso: per attacco 1 - prod_finestre(1 - min(1, sum_intervalli (l_i + l_g - 1)/(L - l_i + 1))); p esatto Poisson-binomiale",
+ "esito_regola": "B",
+ "frase": "segnala quasi ovunque: le rilevazioni non si leggono come prova",
+ "per_finestra": [
+  {
+   "finestra": "test1-w00",
+   "pulita": false,
+   "attacchi": [
+    "test1-a00",
+    "test1-a01",
+    "test1-a02",
+    "test1-a03",
+    "test1-a04"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 14466,
+     "end": 14632
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 8915,
+     "end": 9015
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 26708,
+     "end": 26845
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 26694,
+     "end": 26834
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 27774,
+     "end": 27894
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 6300,
+     "end": 6392
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 8623,
+     "end": 8716
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 21716,
+     "end": 21893
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 4787,
+     "end": 4911
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 14640,
+     "end": 14784
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 485,
+     "end": 651
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 26697,
+     "end": 26838
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 26698,
+     "end": 26838
+    },
+    {
+     "channel": "P4_LD",
+     "start": 20175,
+     "end": 20298
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 26810,
+     "end": 26958
+    }
+   ]
+  },
+  {
+   "finestra": "test1-w01",
+   "pulita": false,
+   "attacchi": [
+    "test1-a02",
+    "test1-a03",
+    "test1-a04"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 3954,
+     "end": 4116
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 3912,
+     "end": 4036
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 14853,
+     "end": 14970
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 14889,
+     "end": 14980
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 29665,
+     "end": 29790
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 29669,
+     "end": 29792
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 29335,
+     "end": 29445
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 11321,
+     "end": 11497
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 12916,
+     "end": 13007
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 10666,
+     "end": 10797
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 32341,
+     "end": 32506
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 31380,
+     "end": 31521
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 31336,
+     "end": 31465
+    },
+    {
+     "channel": "P4_LD",
+     "start": 9898,
+     "end": 10007
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 31331,
+     "end": 31454
+    }
+   ]
+  },
+  {
+   "finestra": "test2-w00",
+   "pulita": false,
+   "attacchi": [
+    "test2-a00",
+    "test2-a01",
+    "test2-a02",
+    "test2-a03",
+    "test2-a04",
+    "test2-a05"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 14253,
+     "end": 14432
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 28928,
+     "end": 29040
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 11458,
+     "end": 11594
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 7285,
+     "end": 7388
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 2790,
+     "end": 2964
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 2783,
+     "end": 2944
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 2772,
+     "end": 2942
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 2770,
+     "end": 2943
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 12268,
+     "end": 12377
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 9087,
+     "end": 9228
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 32554,
+     "end": 32733
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 11460,
+     "end": 11599
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 11456,
+     "end": 11594
+    },
+    {
+     "channel": "P4_LD",
+     "start": 28480,
+     "end": 28611
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 11315,
+     "end": 11428
+    }
+   ]
+  },
+  {
+   "finestra": "test2-w01",
+   "pulita": false,
+   "attacchi": [
+    "test2-a03",
+    "test2-a04",
+    "test2-a05",
+    "test2-a06",
+    "test2-a07",
+    "test2-a08"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 2309,
+     "end": 2474
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 2347,
+     "end": 2522
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 12304,
+     "end": 12438
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 12305,
+     "end": 12439
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 20044,
+     "end": 20214
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 20049,
+     "end": 20205
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 20057,
+     "end": 20220
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 20073,
+     "end": 20249
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 28305,
+     "end": 28436
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 5811,
+     "end": 5952
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 502,
+     "end": 680
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 12332,
+     "end": 12471
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 12277,
+     "end": 12413
+    },
+    {
+     "channel": "P4_LD",
+     "start": 12085,
+     "end": 12210
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 11871,
+     "end": 11977
+    }
+   ]
+  },
+  {
+   "finestra": "test2-w02",
+   "pulita": false,
+   "attacchi": [
+    "test2-a06",
+    "test2-a07",
+    "test2-a08",
+    "test2-a09",
+    "test2-a10"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 5372,
+     "end": 5544
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 5224,
+     "end": 5387
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 26335,
+     "end": 26475
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 3661,
+     "end": 3832
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 3658,
+     "end": 3825
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 3683,
+     "end": 3844
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 3689,
+     "end": 3865
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 11936,
+     "end": 12062
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 4964,
+     "end": 5108
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 32099,
+     "end": 32269
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 26233,
+     "end": 26379
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 26343,
+     "end": 26484
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 13790,
+     "end": 13892
+    }
+   ]
+  },
+  {
+   "finestra": "test2-w03",
+   "pulita": false,
+   "attacchi": [
+    "test2-a09",
+    "test2-a10",
+    "test2-a11",
+    "test2-a12",
+    "test2-a13"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 22199,
+     "end": 22372
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 22180,
+     "end": 22332
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 9998,
+     "end": 10130
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 4800,
+     "end": 4919
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 16536,
+     "end": 16630
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 16531,
+     "end": 16621
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 16504,
+     "end": 16596
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 11461,
+     "end": 11627
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 21556,
+     "end": 21680
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 10076,
+     "end": 10221
+    },
+    {
+     "channel": "P3_LCV01D",
+     "start": 13838,
+     "end": 13967
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 567,
+     "end": 746
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 9854,
+     "end": 9994
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 10029,
+     "end": 10159
+    },
+    {
+     "channel": "P4_LD",
+     "start": 27286,
+     "end": 27411
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 28177,
+     "end": 28284
+    }
+   ]
+  },
+  {
+   "finestra": "test2-w04",
+   "pulita": false,
+   "attacchi": [
+    "test2-a11",
+    "test2-a12",
+    "test2-a13",
+    "test2-a14",
+    "test2-a15",
+    "test2-a16"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 5815,
+     "end": 5987
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 23210,
+     "end": 23377
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 3223,
+     "end": 3331
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 28360,
+     "end": 28501
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 25835,
+     "end": 26009
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 25834,
+     "end": 25994
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 25859,
+     "end": 26022
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 25843,
+     "end": 26014
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 22827,
+     "end": 22960
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 11562,
+     "end": 11701
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 30995,
+     "end": 31163
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 3226,
+     "end": 3344
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 3232,
+     "end": 3346
+    },
+    {
+     "channel": "P4_LD",
+     "start": 10680,
+     "end": 10792
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 11800,
+     "end": 11898
+    }
+   ]
+  },
+  {
+   "finestra": "test2-w05",
+   "pulita": false,
+   "attacchi": [
+    "test2-a14",
+    "test2-a15",
+    "test2-a16",
+    "test2-a17",
+    "test2-a18"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 16549,
+     "end": 16700
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 16514,
+     "end": 16685
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 21953,
+     "end": 22039
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 11999,
+     "end": 12104
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 9457,
+     "end": 9631
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 9464,
+     "end": 9623
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 9471,
+     "end": 9638
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 9455,
+     "end": 9627
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 6452,
+     "end": 6573
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 27624,
+     "end": 27758
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 2901,
+     "end": 3075
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 21944,
+     "end": 22040
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 21947,
+     "end": 22040
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 21939,
+     "end": 22045
+    }
+   ]
+  },
+  {
+   "finestra": "test2-w06",
+   "pulita": false,
+   "attacchi": [
+    "test2-a14",
+    "test2-a15",
+    "test2-a16",
+    "test2-a17",
+    "test2-a18",
+    "test2-a19"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 12439,
+     "end": 12596
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 2737,
+     "end": 2909
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 12606,
+     "end": 12725
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 7882,
+     "end": 8000
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 5344,
+     "end": 5524
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 5366,
+     "end": 5530
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 5368,
+     "end": 5539
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 998,
+     "end": 1175
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 2343,
+     "end": 2459
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 23479,
+     "end": 23615
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 31724,
+     "end": 31889
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 27164,
+     "end": 27297
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 17840,
+     "end": 17924
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 17818,
+     "end": 17909
+    }
+   ]
+  },
+  {
+   "finestra": "test3-w00",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 16434,
+     "end": 16568
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 16440,
+     "end": 16589
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 30390,
+     "end": 30539
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 10984,
+     "end": 11098
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 16778,
+     "end": 16881
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 8542,
+     "end": 8685
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 23092,
+     "end": 23203
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 30174,
+     "end": 30319
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 831,
+     "end": 1009
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 30397,
+     "end": 30549
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 30391,
+     "end": 30543
+    },
+    {
+     "channel": "P4_LD",
+     "start": 27894,
+     "end": 28023
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 30513,
+     "end": 30640
+    }
+   ]
+  },
+  {
+   "finestra": "test3-w01",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 61,
+     "end": 181
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 26779,
+     "end": 26878
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 14008,
+     "end": 14153
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 14006,
+     "end": 14147
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 23862,
+     "end": 23945
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 23841,
+     "end": 23933
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 26453,
+     "end": 26561
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 21939,
+     "end": 22065
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 6803,
+     "end": 6904
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 13788,
+     "end": 13936
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 3393,
+     "end": 3562
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 14014,
+     "end": 14163
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 14008,
+     "end": 14158
+    },
+    {
+     "channel": "P4_LD",
+     "start": 11489,
+     "end": 11608
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 14120,
+     "end": 14241
+    }
+   ]
+  },
+  {
+   "finestra": "test3-w02",
+   "pulita": false,
+   "attacchi": [
+    "test3-a00",
+    "test3-a01",
+    "test3-a02"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 22585,
+     "end": 22749
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 10360,
+     "end": 10525
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 28418,
+     "end": 28572
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 28418,
+     "end": 28571
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 7477,
+     "end": 7555
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 7462,
+     "end": 7556
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 5557,
+     "end": 5683
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 12054,
+     "end": 12162
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 30156,
+     "end": 30292
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 31693,
+     "end": 31857
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 28411,
+     "end": 28568
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 28411,
+     "end": 28567
+    },
+    {
+     "channel": "P4_LD",
+     "start": 22167,
+     "end": 22283
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 28423,
+     "end": 28547
+    }
+   ]
+  },
+  {
+   "finestra": "test3-w03",
+   "pulita": false,
+   "attacchi": [
+    "test3-a00",
+    "test3-a01",
+    "test3-a02",
+    "test3-a03",
+    "test3-a04"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 6201,
+     "end": 6368
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 704,
+     "end": 867
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 12030,
+     "end": 12182
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 12043,
+     "end": 12188
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 27808,
+     "end": 27980
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 25961,
+     "end": 26121
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 27823,
+     "end": 27988
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 27776,
+     "end": 27957
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 17611,
+     "end": 17726
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 26951,
+     "end": 27095
+    },
+    {
+     "channel": "P3_LCV01D",
+     "start": 27256,
+     "end": 27360
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 1370,
+     "end": 1537
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 12031,
+     "end": 12188
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 12024,
+     "end": 12181
+    },
+    {
+     "channel": "P4_LD",
+     "start": 9545,
+     "end": 9658
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 12047,
+     "end": 12164
+    }
+   ]
+  },
+  {
+   "finestra": "test3-w04",
+   "pulita": false,
+   "attacchi": [
+    "test3-a02",
+    "test3-a03",
+    "test3-a04",
+    "test3-a05",
+    "test3-a06"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 30,
+     "end": 199
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 27473,
+     "end": 27637
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 5331,
+     "end": 5466
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 14135,
+     "end": 14234
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 27508,
+     "end": 27678
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 9570,
+     "end": 9735
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 9576,
+     "end": 9740
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 27445,
+     "end": 27618
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 1237,
+     "end": 1360
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 10566,
+     "end": 10707
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 31771,
+     "end": 31938
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 14129,
+     "end": 14248
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 14134,
+     "end": 14247
+    },
+    {
+     "channel": "P4_LD",
+     "start": 22190,
+     "end": 22302
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 22183,
+     "end": 22301
+    }
+   ]
+  },
+  {
+   "finestra": "test3-w05",
+   "pulita": false,
+   "attacchi": [
+    "test3-a03",
+    "test3-a04",
+    "test3-a05",
+    "test3-a06",
+    "test3-a07"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 27635,
+     "end": 27791
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 17774,
+     "end": 17939
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 11152,
+     "end": 11273
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 4439,
+     "end": 4543
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 0,
+     "end": 123
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 1780,
+     "end": 1943
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 1772,
+     "end": 1937
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 0,
+     "end": 133
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 17575,
+     "end": 17711
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 32041,
+     "end": 32188
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 32040,
+     "end": 32208
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 18052,
+     "end": 18179
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 11682,
+     "end": 11812
+    },
+    {
+     "channel": "P4_LD",
+     "start": 12454,
+     "end": 12564
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 26329,
+     "end": 26447
+    }
+   ]
+  },
+  {
+   "finestra": "test4-w00",
+   "pulita": false,
+   "attacchi": [
+    "test4-a00",
+    "test4-a01",
+    "test4-a02",
+    "test4-a03",
+    "test4-a04"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 2690,
+     "end": 2848
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 6470,
+     "end": 6613
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 11355,
+     "end": 11498
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 11338,
+     "end": 11460
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 27408,
+     "end": 27510
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 27393,
+     "end": 27480
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 27456,
+     "end": 27578
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 31564,
+     "end": 31733
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 22811,
+     "end": 22937
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 13775,
+     "end": 13912
+    },
+    {
+     "channel": "P3_LCV01D",
+     "start": 14096,
+     "end": 14234
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 1696,
+     "end": 1870
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 11327,
+     "end": 11476
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 11339,
+     "end": 11487
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 29254,
+     "end": 29356
+    }
+   ]
+  },
+  {
+   "finestra": "test4-w01",
+   "pulita": false,
+   "attacchi": [
+    "test4-a02",
+    "test4-a03",
+    "test4-a04"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 13900,
+     "end": 14063
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 7465,
+     "end": 7611
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 26305,
+     "end": 26448
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 29127,
+     "end": 29240
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 21068,
+     "end": 21150
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 25881,
+     "end": 25990
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 25974,
+     "end": 26082
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 13835,
+     "end": 14008
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 21693,
+     "end": 21786
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 13928,
+     "end": 14074
+    },
+    {
+     "channel": "P3_LCV01D",
+     "start": 7376,
+     "end": 7510
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 32034,
+     "end": 32208
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 4461,
+     "end": 4605
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 4462,
+     "end": 4604
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 9613,
+     "end": 9720
+    }
+   ]
+  },
+  {
+   "finestra": "test5-w00",
+   "pulita": false,
+   "attacchi": [
+    "test5-a00",
+    "test5-a01",
+    "test5-a02",
+    "test5-a03",
+    "test5-a04"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 28089,
+     "end": 28250
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 9562,
+     "end": 9723
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 4820,
+     "end": 4937
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 22699,
+     "end": 22825
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 1554,
+     "end": 1734
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 1575,
+     "end": 1733
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 1576,
+     "end": 1739
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 1561,
+     "end": 1734
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 5384,
+     "end": 5528
+    },
+    {
+     "channel": "P3_LCV01D",
+     "start": 24853,
+     "end": 24982
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 1529,
+     "end": 1711
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 9313,
+     "end": 9425
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 9314,
+     "end": 9424
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 24811,
+     "end": 24935
+    }
+   ]
+  },
+  {
+   "finestra": "test5-w01",
+   "pulita": false,
+   "attacchi": [
+    "test5-a02",
+    "test5-a03",
+    "test5-a04",
+    "test5-a05",
+    "test5-a06"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 11707,
+     "end": 11876
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 8486,
+     "end": 8636
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 8461,
+     "end": 8589
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 6331,
+     "end": 6443
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 28166,
+     "end": 28338
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 28147,
+     "end": 28310
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 28159,
+     "end": 28329
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 28187,
+     "end": 28364
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 25899,
+     "end": 26022
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 12838,
+     "end": 12985
+    },
+    {
+     "channel": "P3_LCV01D",
+     "start": 8461,
+     "end": 8576
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 1011,
+     "end": 1186
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 23928,
+     "end": 24044
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 23935,
+     "end": 24032
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 8443,
+     "end": 8558
+    }
+   ]
+  },
+  {
+   "finestra": "test5-w02",
+   "pulita": false,
+   "attacchi": [
+    "test5-a05",
+    "test5-a06",
+    "test5-a07",
+    "test5-a08"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 19057,
+     "end": 19237
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 19079,
+     "end": 19247
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 7544,
+     "end": 7649
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 7475,
+     "end": 7592
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 11789,
+     "end": 11960
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 11765,
+     "end": 11930
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 11785,
+     "end": 11954
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 11805,
+     "end": 11981
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 9522,
+     "end": 9638
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 5936,
+     "end": 6082
+    },
+    {
+     "channel": "P3_LCV01D",
+     "start": 2827,
+     "end": 2942
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 31019,
+     "end": 31187
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 7541,
+     "end": 7651
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 7561,
+     "end": 7650
+    },
+    {
+     "channel": "P4_LD",
+     "start": 10594,
+     "end": 10709
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 12791,
+     "end": 12884
+    }
+   ]
+  },
+  {
+   "finestra": "test5-w03",
+   "pulita": false,
+   "attacchi": [
+    "test5-a07",
+    "test5-a08"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 2673,
+     "end": 2854
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 2694,
+     "end": 2863
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 19162,
+     "end": 19291
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 9394,
+     "end": 9505
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 23983,
+     "end": 24082
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 27529,
+     "end": 27656
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 2937,
+     "end": 3047
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 14635,
+     "end": 14780
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 1476,
+     "end": 1657
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 9384,
+     "end": 9502
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 9398,
+     "end": 9525
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 25896,
+     "end": 26007
+    }
+   ]
+  },
+  {
+   "finestra": "test5-w04",
+   "pulita": false,
+   "attacchi": [
+    "test5-a09",
+    "test5-a10",
+    "test5-a11"
+   ],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 23597,
+     "end": 23752
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 28638,
+     "end": 28791
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 16714,
+     "end": 16847
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 8397,
+     "end": 8503
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 26112,
+     "end": 26290
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 26114,
+     "end": 26279
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 26135,
+     "end": 26296
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 26148,
+     "end": 26321
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 26156,
+     "end": 26280
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 9692,
+     "end": 9835
+    },
+    {
+     "channel": "P3_LCV01D",
+     "start": 26206,
+     "end": 26334
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 0,
+     "end": 114
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 16619,
+     "end": 16764
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 16619,
+     "end": 16763
+    },
+    {
+     "channel": "P4_LD",
+     "start": 26944,
+     "end": 27079
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 5932,
+     "end": 6037
+    }
+   ]
+  },
+  {
+   "finestra": "train1-w00",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 30521,
+     "end": 30645
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 30535,
+     "end": 30664
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 26635,
+     "end": 26772
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 16136,
+     "end": 16215
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 27524,
+     "end": 27627
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 27530,
+     "end": 27626
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 27657,
+     "end": 27755
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 22620,
+     "end": 22769
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 13866,
+     "end": 14010
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 0,
+     "end": 109
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 26247,
+     "end": 26385
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 26650,
+     "end": 26792
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 3421,
+     "end": 3507
+    }
+   ]
+  },
+  {
+   "finestra": "train1-w01",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 31912,
+     "end": 32067
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 5192,
+     "end": 5334
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 5772,
+     "end": 5902
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 5774,
+     "end": 5900
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 11836,
+     "end": 11923
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 5793,
+     "end": 5889
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 19772,
+     "end": 19921
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 23142,
+     "end": 23254
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 13874,
+     "end": 14008
+    },
+    {
+     "channel": "P3_LCV01D",
+     "start": 28062,
+     "end": 28204
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 32201,
+     "end": 32376
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 5769,
+     "end": 5905
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 6068,
+     "end": 6208
+    },
+    {
+     "channel": "P4_LD",
+     "start": 14225,
+     "end": 14350
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 5797,
+     "end": 5936
+    }
+   ]
+  },
+  {
+   "finestra": "train1-w02",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 7789,
+     "end": 7875
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 16528,
+     "end": 16645
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 28860,
+     "end": 29006
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 16553,
+     "end": 16667
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 6593,
+     "end": 6660
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 6206,
+     "end": 6294
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 32099,
+     "end": 32238
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 11004,
+     "end": 11102
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 9788,
+     "end": 9939
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 32520,
+     "end": 32696
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 28855,
+     "end": 29005
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 28856,
+     "end": 29004
+    },
+    {
+     "channel": "P4_LD",
+     "start": 9768,
+     "end": 9896
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 28814,
+     "end": 28956
+    }
+   ]
+  },
+  {
+   "finestra": "train1-w03",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 16607,
+     "end": 16743
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 16600,
+     "end": 16734
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 19961,
+     "end": 20103
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 7546,
+     "end": 7636
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 22600,
+     "end": 22685
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 31347,
+     "end": 31499
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 8495,
+     "end": 8608
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 29970,
+     "end": 30121
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 1612,
+     "end": 1785
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 16330,
+     "end": 16456
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 19960,
+     "end": 20104
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 13239,
+     "end": 13334
+    }
+   ]
+  },
+  {
+   "finestra": "train2-w00",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 19187,
+     "end": 19331
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 4391,
+     "end": 4504
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 27928,
+     "end": 28073
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 27929,
+     "end": 28074
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 29033,
+     "end": 29115
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 19818,
+     "end": 19959
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 18239,
+     "end": 18356
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 9265,
+     "end": 9414
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 32058,
+     "end": 32239
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 27850,
+     "end": 27998
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 27816,
+     "end": 27962
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 17916,
+     "end": 18002
+    }
+   ]
+  },
+  {
+   "finestra": "train2-w01",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 31000,
+     "end": 31151
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 31798,
+     "end": 31946
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 18067,
+     "end": 18200
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 18066,
+     "end": 18200
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 28380,
+     "end": 28464
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 21827,
+     "end": 21977
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 10827,
+     "end": 10937
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 5526,
+     "end": 5676
+    },
+    {
+     "channel": "P3_LCV01D",
+     "start": 22073,
+     "end": 22207
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 1289,
+     "end": 1457
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 17883,
+     "end": 17981
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 17884,
+     "end": 17978
+    },
+    {
+     "channel": "P4_LD",
+     "start": 21887,
+     "end": 22012
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 17871,
+     "end": 17970
+    }
+   ]
+  },
+  {
+   "finestra": "train2-w02",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 5681,
+     "end": 5807
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 5679,
+     "end": 5827
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 27306,
+     "end": 27452
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 24024,
+     "end": 24115
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 10205,
+     "end": 10287
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 27439,
+     "end": 27593
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 30507,
+     "end": 30635
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 1910,
+     "end": 2028
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 1561,
+     "end": 1742
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 27303,
+     "end": 27454
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 27305,
+     "end": 27455
+    },
+    {
+     "channel": "P4_LD",
+     "start": 31166,
+     "end": 31292
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 27275,
+     "end": 27417
+    }
+   ]
+  },
+  {
+   "finestra": "train2-w03",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 16755,
+     "end": 16843
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 16713,
+     "end": 16819
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 29354,
+     "end": 29503
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 29343,
+     "end": 29483
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 26108,
+     "end": 26186
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 24492,
+     "end": 24591
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 4608,
+     "end": 4753
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 24040,
+     "end": 24139
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 12521,
+     "end": 12663
+    },
+    {
+     "channel": "P3_LCV01D",
+     "start": 12482,
+     "end": 12608
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 4643,
+     "end": 4812
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 29333,
+     "end": 29485
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 29342,
+     "end": 29493
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 29247,
+     "end": 29382
+    }
+   ]
+  },
+  {
+   "finestra": "train3-w00",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 23788,
+     "end": 23942
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 18146,
+     "end": 18290
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 10919,
+     "end": 11043
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 16068,
+     "end": 16204
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 16791,
+     "end": 16876
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 24725,
+     "end": 24827
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 4405,
+     "end": 4547
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 24524,
+     "end": 24672
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 29993,
+     "end": 30115
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 30027,
+     "end": 30174
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 92,
+     "end": 261
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 18814,
+     "end": 18908
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 32427,
+     "end": 32573
+    },
+    {
+     "channel": "P4_LD",
+     "start": 10916,
+     "end": 11032
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 18794,
+     "end": 18900
+    }
+   ]
+  },
+  {
+   "finestra": "train3-w01",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 3261,
+     "end": 3405
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 3259,
+     "end": 3399
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 5547,
+     "end": 5642
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 10617,
+     "end": 10726
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 3711,
+     "end": 3795
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 18706,
+     "end": 18793
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 3764,
+     "end": 3850
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 14136,
+     "end": 14291
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 5450,
+     "end": 5557
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 30445,
+     "end": 30597
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 1854,
+     "end": 2025
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 5352,
+     "end": 5487
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 5335,
+     "end": 5472
+    },
+    {
+     "channel": "P4_LD",
+     "start": 29874,
+     "end": 30001
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 29675,
+     "end": 29802
+    }
+   ]
+  },
+  {
+   "finestra": "train3-w02",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 5860,
+     "end": 5970
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 24224,
+     "end": 24375
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 20710,
+     "end": 20842
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 24252,
+     "end": 24376
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 26677,
+     "end": 26766
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 14611,
+     "end": 14707
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 20552,
+     "end": 20712
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 14563,
+     "end": 14686
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 27879,
+     "end": 28030
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 475,
+     "end": 655
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 5892,
+     "end": 6025
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 5851,
+     "end": 5984
+    },
+    {
+     "channel": "P4_LD",
+     "start": 13611,
+     "end": 13716
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 5787,
+     "end": 5914
+    }
+   ]
+  },
+  {
+   "finestra": "train3-w03",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 14005,
+     "end": 14141
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 19937,
+     "end": 20041
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 7248,
+     "end": 7395
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 7250,
+     "end": 7387
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 27204,
+     "end": 27302
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 25703,
+     "end": 25833
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 32288,
+     "end": 32447
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 22814,
+     "end": 22932
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 19785,
+     "end": 19924
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 32257,
+     "end": 32427
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 7233,
+     "end": 7378
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 7239,
+     "end": 7385
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 7216,
+     "end": 7340
+    }
+   ]
+  },
+  {
+   "finestra": "train3-w04",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 20543,
+     "end": 20692
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 15143,
+     "end": 15298
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 19531,
+     "end": 19669
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 8083,
+     "end": 8210
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 15196,
+     "end": 15285
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 764,
+     "end": 861
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 15777,
+     "end": 15929
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 11123,
+     "end": 11219
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 29318,
+     "end": 29446
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 32287,
+     "end": 32459
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 19515,
+     "end": 19656
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 19525,
+     "end": 19665
+    },
+    {
+     "channel": "P4_LD",
+     "start": 18272,
+     "end": 18396
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 19472,
+     "end": 19604
+    }
+   ]
+  },
+  {
+   "finestra": "train3-w05",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 8924,
+     "end": 9068
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 0,
+     "end": 102
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 5892,
+     "end": 6019
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 18064,
+     "end": 18166
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 20756,
+     "end": 20856
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 14351,
+     "end": 14451
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 20752,
+     "end": 20859
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 26702,
+     "end": 26855
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 24330,
+     "end": 24451
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 12608,
+     "end": 12749
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 806,
+     "end": 973
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 5812,
+     "end": 5941
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 5880,
+     "end": 6013
+    },
+    {
+     "channel": "P4_LD",
+     "start": 22257,
+     "end": 22371
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 5802,
+     "end": 5935
+    }
+   ]
+  },
+  {
+   "finestra": "train3-w06",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 20988,
+     "end": 21133
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 12036,
+     "end": 12150
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 15109,
+     "end": 15246
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 15021,
+     "end": 15154
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 13881,
+     "end": 13955
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 22983,
+     "end": 23074
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 15064,
+     "end": 15221
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 29495,
+     "end": 29618
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 11040,
+     "end": 11157
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 31558,
+     "end": 31724
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 15358,
+     "end": 15513
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 15025,
+     "end": 15158
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 15855,
+     "end": 15974
+    }
+   ]
+  },
+  {
+   "finestra": "train3-w07",
+   "pulita": true,
+   "attacchi": [],
+   "valida": true,
+   "emessi": [
+    {
+     "channel": "P1_LCV01D",
+     "start": 24281,
+     "end": 24433
+    },
+    {
+     "channel": "P1_FCV03D",
+     "start": 24292,
+     "end": 24440
+    },
+    {
+     "channel": "P1_B2016",
+     "start": 22689,
+     "end": 22815
+    },
+    {
+     "channel": "P1_B4022",
+     "start": 24233,
+     "end": 24365
+    },
+    {
+     "channel": "P2_VT01",
+     "start": 9826,
+     "end": 9906
+    },
+    {
+     "channel": "P2_VYT02",
+     "start": 9789,
+     "end": 9868
+    },
+    {
+     "channel": "P2_VXT02",
+     "start": 3704,
+     "end": 3784
+    },
+    {
+     "channel": "P2_SIT02",
+     "start": 30713,
+     "end": 30870
+    },
+    {
+     "channel": "P3_LIT01",
+     "start": 13493,
+     "end": 13616
+    },
+    {
+     "channel": "P3_LCP01D",
+     "start": 30433,
+     "end": 30579
+    },
+    {
+     "channel": "P3_FIT01",
+     "start": 3085,
+     "end": 3253
+    },
+    {
+     "channel": "P4_ST_GOV",
+     "start": 22963,
+     "end": 23055
+    },
+    {
+     "channel": "P4_ST_PO",
+     "start": 22710,
+     "end": 22841
+    },
+    {
+     "channel": "P4_LD",
+     "start": 22742,
+     "end": 22854
+    },
+    {
+     "channel": "P4_ST_LD",
+     "start": 16947,
+     "end": 17059
+    }
+   ]
+  }
+ ],
+ "ruolo": "SECONDARIO: scansione dei 16 canali con localize a un canale",
+ "risposte_a_un_canale": {
+  "righe": 608,
+  "valide": 608,
+  "assente": 64,
+  "presente": 544,
+  "non_valide": 0
+ },
+ "per_canale": {
+  "P1_LCV01D": {
+   "M1": 12,
+   "M1_caso": 0.9185104200428759,
+   "M2": 18,
+   "presente": 38
+  },
+  "P1_FCV03D": {
+   "M1": 16,
+   "M1_caso": 0.8853798971469713,
+   "M2": 18,
+   "presente": 38
+  },
+  "P1_B2016": {
+   "M1": 1,
+   "M1_caso": 0.8134773612212545,
+   "M2": 18,
+   "presente": 38
+  },
+  "P1_B4022": {
+   "M1": 0,
+   "M1_caso": 0.7442494744691013,
+   "M2": 18,
+   "presente": 37
+  },
+  "P2_VT01": {
+   "M1": 9,
+   "M1_caso": 0.8640323364617178,
+   "M2": 10,
+   "presente": 29
+  },
+  "P2_VYT02": {
+   "M1": 9,
+   "M1_caso": 0.8572138837380363,
+   "M2": 13,
+   "presente": 33
+  },
+  "P2_VXT02": {
+   "M1": 9,
+   "M1_caso": 0.8326571161621018,
+   "M2": 14,
+   "presente": 32
+  },
+  "P2_SIT02": {
+   "M1": 13,
+   "M1_caso": 0.9296923156831541,
+   "M2": 18,
+   "presente": 38
+  },
+  "P3_LIT01": {
+   "M1": 1,
+   "M1_caso": 0.7444157025453337,
+   "M2": 17,
+   "presente": 36
+  },
+  "P3_LCP01D": {
+   "M1": 2,
+   "M1_caso": 0.8517003095712687,
+   "M2": 18,
+   "presente": 38
+  },
+  "P3_LCV01D": {
+   "M1": 4,
+   "M1_caso": 0.3370793665975813,
+   "M2": 3,
+   "presente": 11
+  },
+  "P3_FIT01": {
+   "M1": 1,
+   "M1_caso": 0.9296156528367073,
+   "M2": 18,
+   "presente": 38
+  },
+  "P4_ST_GOV": {
+   "M1": 0,
+   "M1_caso": 0.8250296696936128,
+   "M2": 18,
+   "presente": 38
+  },
+  "P4_ST_PO": {
+   "M1": 0,
+   "M1_caso": 0.804477194959178,
+   "M2": 18,
+   "presente": 38
+  },
+  "P4_LD": {
+   "M1": 0,
+   "M1_caso": 0.4710899383577043,
+   "M2": 12,
+   "presente": 24
+  },
+  "P4_ST_LD": {
+   "M1": 1,
+   "M1_caso": 0.7674117246338449,
+   "M2": 18,
+   "presente": 38
+  }
+ },
+ "modo": "scan"
+}
